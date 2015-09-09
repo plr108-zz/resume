@@ -92,18 +92,3 @@ var education = {
 		}
 	]
 }
-
-if(bio.skills.length > 0) {
-	console.log(bio.skills.length);
-	$("#header").append("MadSkillz");
-
-	var formattedSkill = HTMLskills.replace("%date%", "Skill1");
-
-	$("#skills").append(formattedSkill);
-
-}
-else
-{
-	console.log("you have no skills");
-}
-
