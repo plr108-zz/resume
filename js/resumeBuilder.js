@@ -12,7 +12,7 @@ var bio = {
 	},
 	
 	"skills" : [
-		"HTML","CSS","JavaScript","hustle","loyalty","respect","grit","awesomeness"
+		"HTML","CSS","JavaScript","Java", "C++", "C#", "Hustle","Loyalty","Respect","Grit","Awesomeness"
 	],
 
 	"bioPic" : "images/me.jpg",
@@ -61,26 +61,38 @@ var bio = {
 var work = {
 	"jobs" : [
 		{
-			"employer" : "Job 1 Employer Name",
-			"title" : "Job 1 Title",
-			"location" : "Dravosburg, PA",
-			"dates" : "Job 1 start date - Job 1 end date",
-			"description" : "Job 1 Description" 	
+			"employer" : "Philips",
+			"title" : "Senior Engineering Specialist",
+			"location" : "Plum, PA",
+			"dates" : "2010 - Present",
+			"description" : "I create and validate the processes used to service medical devices." 	
 		},
 		{
-			"employer" : "Job 2 Employer Name",
-			"title" : "Job 2 Title",
+			"employer" : "Bechtel Plant Machinery Incorporated",
+			"title" : "Supplier Quality Assurcance Engineer",
+			"location" : "Monroeville, PA",
+			"dates" : "2008 - 2010",
+			"description" : "I ensured that our company's instrumentation and control system suppliers provided equipment that met our quality and contract requrements."
+		},
+		{
+			"employer" : "US Army PM Transporation Information Systems",
+			"title" : "Software Group Lead",
+			"location" : "Springfield, VA",
+			"dates" : "2005 - 2008",
+			"description" : "I developed software that managed military transporation operations.  I managed interfaces with other military systems, developed data exchange software in Java EE, and displayed transporation-related information in web applications using JavaScript and jQuery.  I also managed the work of a team of three software development task leads and about 25 software developers."
+		},
+		{
+			"employer" : "Naval Surface Warfare Center Dahlgren Division",
+			"title" : "Software Engineer",
 			"location" : "Dahlgren, VA",
-			"dates" : "Job 2 start date - Job 2 end date",
-			"description" : "Job 2 Description" 	
+			"dates" : "2003 - 2005",
+			"description" : "I developed software used in the configuration and certification of US navy tactical data and radar systems.  I created components of a software model in C++ that was used to simulate tactical systems of US Navy strike groups during combat scenarios.  I also developed components of a web-based software project management system used to plan, execute, and assess combat system interoperability tests."
 		}
 	],
 	display : function() {
-		// add jobs info to Work Experience
+
 		for(job in work.jobs)
 		{
-			$("#workExperience").append(HTMLworkStart);
-
 			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 			var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 			var formattedEmployerTitle = formattedEmployer + formattedTitle;
@@ -88,6 +100,7 @@ var work = {
 			var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 			var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 
+			$("#workExperience").append(HTMLworkStart);
 			$(".work-entry:last").append(formattedEmployerTitle);
 			$(".work-entry:last").append(formattedWorkLocation);
 			$(".work-entry:last").append(formattedWorkDates);
@@ -98,20 +111,13 @@ var work = {
 
 var projects = {
 	"projects" : [
-		{	"title" : "Project 1 Title", 
-			"dates" : "Project 1 start date - Project 1 end date",
-			"description" : "Project 1 Description",
+		{	"title" : "Tecmo Super Bowl Team Select Android Application", 
+			"dates" : "2014 - Present",
+			"description" : "During football season I still play a lot of Tecmo Super Bowl with my friends.  We play on the original Nintendo Entertainment System hardware, and to keep it fair and interesting we needed a new way to pick our teams.  The game does not have a random team select feature so I created this app (in 8-bit style graphics and fonts to stay true to the game of course).  Here's how it works: the app will present 3 random teams for each user to choose from.  The app will then rate the players' team picks as well as show who has an advantage in the matchup.  In the pictures below Player 2 picked the Raiders, and Player 1 picked the Eagles.  Player 2 picked the best team presented so their name appears in green.  Player 1 picked the second best team presented so their name appears in yellow.  (The worst pick possible would cause a player's name to appear in red.)  In the game the Raiders are a slightly better team than the Eagles, so the advantage arrow points towards Player 2.",
 			"images" : [
 				"images/project1image1.jpg",
-				"images/project1image2.jpg"
-			]
-		},
-		{	"title" : "Project 2 Title", 
-			"dates" : "Project 2 start date - Project 2 end date",
-			"description" : "Project 2 Description",
-			"images" : [
-				"images/project2image1.jpg",
-				"images/project2image2.jpg"
+				"images/project1image2.jpg",
+				"images/project1image3.jpg"
 			]
 		}
 	],
@@ -153,7 +159,7 @@ var education = {
 		{
 			"name" : "Penn State University", 
 			"location" : "University Park, PA",
-			"degree" : "Master",
+			"degree" : "Master's",
 			"majors" : [
 				"Manufacturing Management"
 				],
@@ -167,6 +173,36 @@ var education = {
 			"school" : "Udacity",
 			"date" : 2015,
 			"url" : "https://www.udacity.com/course/viewer#!/c-ud304-nd" 
+		},
+		{
+			"title" : "Responsive Web Design Fundamentals",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "https://www.udacity.com/course/viewer#!/c-ud893-nd/l-3561069759" 
+		},
+		{
+			"title" : "Responsive Images",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "https://www.udacity.com/course/viewer#!/c-ud882-nd/l-3574748851/m-3573228854" 
+		},
+		{
+			"title" : "How to Use Git and GitHub",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "https://www.udacity.com/course/viewer#!/c-ud775-nd" 
+		},
+		{
+			"title" : "JavaScript Basics",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "https://www.udacity.com/course/viewer#!/c-ud804-nd/l-2239648539/e-1962768535/m-1950528601" 
+		},
+		{
+			"title" : "Into to jQuery",
+			"school" : "Udacity",
+			"date" : 2015,
+			"url" : "https://www.udacity.com/course/viewer#!/c-ud245-nd/l-3342528615/m-3343838767" 
 		}
 	],
 	display : function() {
