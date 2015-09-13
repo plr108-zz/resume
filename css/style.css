@@ -11,7 +11,7 @@ h5,
 h6 {
   padding:0;
   margin:0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .clear-fix {
@@ -24,17 +24,26 @@ h6 {
   padding: 0 5%;
 }
 
+
+.education-entry ~ a ~ a {
+  color: #ff0066;
+}
+
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #85a3f3;
   line-height: 48px;
   display: inline;
+}
+
+h1+span{
+  color: #fff;
 }
 
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #0f1f4c;
   line-height: 29px;
   padding: 10px;
 }
@@ -42,7 +51,7 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000;
+  color: #0f1f4c;
   line-height: 22px;
 }
 
@@ -60,7 +69,6 @@ h5 {
   padding:10px 5%;
 
 }
-
 
 .date-text {
   font-style: italic;
@@ -86,7 +94,7 @@ p {
 }
 
 a {
-  color: #1199c3;
+  color: #092568;
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -94,22 +102,22 @@ a {
 
 .welcome-message {
   font-style: italic;
-  font-size: 18px;
+  font-size: 24px;
   color: #f3f3f3;
   line-height: 28px;
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #85a3f3;
   display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #85a3f3;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #85a3f3;
 }
 
 .white-text {
@@ -127,9 +135,8 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #0f1f4c;
 }
 
 .flex-box {
@@ -166,10 +173,11 @@ span {
 
 #lets-connect {
   text-align: center;
+  color: #3366ff;
+  background-color: #0f1f4c;
 }
 
 /* Media queries to handle various device widths */
-
 @media only screen and (max-width: 1024px) {
   #lets-connect {
     margin-top: 5%;

@@ -12,7 +12,7 @@ var bio = {
 	},
 	
 	"skills" : [
-		"HTML","CSS","JavaScript","Java", "C++", "C#", "Hustle","Loyalty","Respect","Grit","Awesomeness"
+		"HTML","CSS","JavaScript","Java", "C#", "Hustle","Loyalty","Respect","Grit","Awesomeness"
 	],
 
 	"bioPic" : "images/me.jpg",
@@ -69,28 +69,33 @@ var work = {
 			"title" : "Senior Engineering Specialist",
 			"location" : "Plum, PA",
 			"dates" : "2010 - Present",
-			"description" : "I create and validate the processes used to service medical devices." 	
+			"description" : "I create and validate the processes used to service medical devices.  I also review deliverables for device testing software written in C, C++, and National Instruments LabVIEW.",
+			// I add a URL key to all items in the jobs array
+			"url" : "http://www.philips.com" 
 		},
 		{
 			"employer" : "Bechtel Plant Machinery Incorporated",
-			"title" : "Supplier Quality Assurcance Engineer",
+			"title" : "Supplier Quality Assurance Engineer",
 			"location" : "Monroeville, PA",
 			"dates" : "2008 - 2010",
-			"description" : "I ensured that our company's instrumentation and control system suppliers provided equipment that met our quality and contract requrements."
+			"description" : "I ensured that our company's instrumentation and control system suppliers provided equipment that met Navy Nuclear Program quality system and contract requrements.",
+			"url" : "http://www.bpmionline.com"
 		},
 		{
 			"employer" : "US Army PM Transporation Information Systems",
 			"title" : "Software Group Lead",
 			"location" : "Springfield, VA",
 			"dates" : "2005 - 2008",
-			"description" : "I developed software that managed military transporation operations.  I managed interfaces with other military systems, developed data exchange software in Java EE, and displayed transporation-related information in web applications using JavaScript and jQuery.  I also managed the work of a team of three software development task leads and about 25 software developers."
+			"description" : "I developed software that managed military transporation operations.  I managed interfaces with other military systems, developed data exchange software in Java EE, and displayed transporation-related information in web applications using JavaScript and jQuery.  I also managed the work of a team of three software development task leads and about 25 software developers.",
+			"url" : "http://www.pdamis.army.mil/"
 		},
 		{
 			"employer" : "Naval Surface Warfare Center Dahlgren Division",
 			"title" : "Software Engineer",
 			"location" : "Dahlgren, VA",
 			"dates" : "2003 - 2005",
-			"description" : "I developed software used in the configuration and certification of US navy tactical data and radar systems.  I created components of a software model in C++ that was used to simulate tactical systems of US Navy strike groups during combat scenarios.  I also developed components of a web-based software project management system used to plan, execute, and assess combat system interoperability tests."
+			"description" : "I developed software used in the configuration and certification of US navy tactical data and radar systems.  I created components of a software model in C++ that was used to simulate tactical systems of US Navy strike groups during combat scenarios.  I also developed components of a web-based software project management system used to plan, execute, and assess combat system interoperability tests.",
+			"url" : "http://www.navy.mil/local/NSWCDD/"
 		}
 	],
 	display : function() {
@@ -98,8 +103,12 @@ var work = {
 		for(job in work.jobs)
 		{
 			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+			// add work URL to formattedEmployer.  URL opens in a new browser window. 
+			formattedEmployer = formattedEmployer.replace("#", work.jobs[job].url + "\"" + " target=\"_blank\"");
 			var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 			var formattedEmployerTitle = formattedEmployer + formattedTitle;
+			
+			
 			var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
 			var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 			var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
@@ -213,6 +222,8 @@ var education = {
 		for(school in education.schools)
 		{
 			var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
+			// add school URL to formattedSchoolName.  URL opens in a new browser window. 
+			formattedSchoolName = formattedSchoolName.replace("#", education.schools[school].url + "\"" + " target=\"_blank\"");
 			var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
 			var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
 			var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
@@ -226,19 +237,23 @@ var education = {
 			$(".education-entry:last").append(formattedSchoolMajor);
 		}
 
-		$("#education").append(HTMLonlineClasses);
+		// I added a <br> before the Online Courses header so there is more space between the Education and Online Course sections
+		$("#education").append("<br>" + HTMLonlineClasses);
 
 		for(onlineCourse in education.onlineCourses)
 		{
 			var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
+			// add school URL to formattedSchoolName.  URL opens in a new browser window.
+			formattedOnlineTitle = formattedOnlineTitle.replace("#", education.onlineCourses[onlineCourse].url + "\"" + " target=\"_blank\"");
 			var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
 			var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].date);
-			var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[onlineCourse].url);
 
+			// HTMLonlineURL is not displayed since URL is reachable via the Title/School tag.
+			// I thought this was a cleaner-looking implementation than displaying the URL separately.
 			$("#education").append(HTMLschoolStart);
 			$(".education-entry:last").append(formattedOnlineTitle+formattedOnlineSchool);
-			$(".education-entry:last").append(formattedOnlineDates);
-			$(".education-entry:last").append(formattedOnlineURL);
+			// I added a <br> formattedOnlineDates to give a little space between each online course entry.
+			$(".education-entry:last").append(formattedOnlineDates + "<br>");
 		}
 
 	}
