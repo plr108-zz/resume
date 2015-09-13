@@ -50,11 +50,15 @@ var bio = {
 		  	}
 		}
 
+		// show footer contact info
 		$("#footerContacts").append(formattedMobile);
 		$("#footerContacts").append(formattedEmail);
 		$("#footerContacts").append(formattedGithub);
 		$("#footerContacts").append(formattedTwitter);
 		$("#footerContacts").append(formattedLocation);
+
+		// Show interactive map
+		$("#mapDiv").append(googleMap);
 	}
 };
 
@@ -259,5 +263,3 @@ education.display();
 work.display();
 projects.display();
 bio.display();
-
-$("#mapDiv").append(googleMap);
