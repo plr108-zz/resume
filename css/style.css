@@ -24,11 +24,6 @@ h6 {
   padding: 0 5%;
 }
 
-
-.education-entry ~ a ~ a {
-  color: #ff0066;
-}
-
 h1 {
   font-size: 40px;
   color: #85a3f3;
@@ -36,7 +31,7 @@ h1 {
   display: inline;
 }
 
-h1+span{
+h1+span {
   color: #fff;
 }
 
@@ -84,7 +79,6 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -112,11 +106,11 @@ a {
   display: none;
 }
 
-.orange {
+.light-blue {
   background-color: #85a3f3;
 }
 
-.orange-text {
+.light-blue-text {
   color: #85a3f3;
 }
 
