@@ -24,7 +24,7 @@ var bio = {
         var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
         var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
         var formattedLinkedIn = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
-        var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+        var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
         var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
         var formattedBioPic = HTMLbioPic.replace("%data%", "images/me.jpg");
         var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
@@ -35,7 +35,7 @@ var bio = {
         $("#topContacts").append(formattedMobile);
         $("#topContacts").append(formattedEmail);
         $("#topContacts").append(formattedLinkedIn);
-        $("#topContacts").append(formattedGithub);
+        $("#topContacts").append(formattedGitHub);
         $("#topContacts").append(formattedLocation);
         $("#header").append(formattedBioPic);
         $("#header").append(formattedWelcomeMsg);
@@ -53,7 +53,7 @@ var bio = {
         // show footer contact info
         $("#footerContacts").append(formattedMobile);
         $("#footerContacts").append(formattedEmail);
-        $("#footerContacts").append(formattedGithub);
+        $("#footerContacts").append(formattedGitHub);
         $("#footerContacts").append(formattedLinkedIn);
         $("#footerContacts").append(formattedLocation);
 
@@ -259,17 +259,6 @@ var education = {
     }
 
 };
-
-// log location of every page click and number of page clicks
-var clicks = 0;
-$(document).click(function(loc) {
-    var x = loc.pageX;
-    var y = loc.pageY;
-
-    logClicks(x, y);
-    clicks++;
-    console.log("Clicks: " + clicks);
-});
 
 education.display();
 work.display();
