@@ -7,7 +7,7 @@ var bio = {
         "mobile": "724-875-3487",
         "email": "patrick.l.roche@gmail.com",
         "github": "plr108",
-        "twitter": "@Patrick_Roche",
+        "linkedin": "patrickroche1",
         "location": "Irwin, PA"
     },
 
@@ -23,7 +23,7 @@ var bio = {
         var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
         var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
         var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-        var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+        var formattedLinkedIn = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
         var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
         var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
         var formattedBioPic = HTMLbioPic.replace("%data%", "images/me.jpg");
@@ -34,7 +34,7 @@ var bio = {
 
         $("#topContacts").append(formattedMobile);
         $("#topContacts").append(formattedEmail);
-        $("#topContacts").append(formattedTwitter);
+        $("#topContacts").append(formattedLinkedIn);
         $("#topContacts").append(formattedGithub);
         $("#topContacts").append(formattedLocation);
         $("#header").append(formattedBioPic);
@@ -54,7 +54,7 @@ var bio = {
         $("#footerContacts").append(formattedMobile);
         $("#footerContacts").append(formattedEmail);
         $("#footerContacts").append(formattedGithub);
-        $("#footerContacts").append(formattedTwitter);
+        $("#footerContacts").append(formattedLinkedIn);
         $("#footerContacts").append(formattedLocation);
 
         // Show interactive map
