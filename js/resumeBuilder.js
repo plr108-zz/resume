@@ -8,7 +8,7 @@ var bio = {
         "email": "patrick.l.roche@gmail.com",
         "github": "plr108",
         "twitter": "@Patrick_Roche",
-        "location": "Pittsburgh, PA"
+        "location": "Irwin, PA"
     },
 
     "skills": [
