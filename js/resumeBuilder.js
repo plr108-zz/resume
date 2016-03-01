@@ -113,7 +113,7 @@ var work = {
 	],
 	display : function() {
 
-		for(job in work.jobs)
+		for(var job in work.jobs)
 		{
 			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 			// add work URL to formattedEmployer.  URL opens in a new browser window.
@@ -165,7 +165,7 @@ var projects = {
 	display : function() {
 		$("#projects").append(HTMLprojectStart);
 
-		for(project in projects.projects) {
+		for(var project in projects.projects) {
 
 			var formattedProjectTitle = HTMLprojectTitle.replace("%data%",
 				projects.projects[project].title);
@@ -179,7 +179,7 @@ var projects = {
 			$(".project-entry:last").append(formattedProjectDescription);
 
 			if(projects.projects[project].images.length > 0) {
-				for(image in projects.projects[project].images) {
+				for(var image in projects.projects[project].images) {
 					var formattedProjectImage = HTMLprojectImage.replace("%data%",
 						projects.projects[project].images[image]);
 					$(".project-entry:last").append(formattedProjectImage);
@@ -187,7 +187,7 @@ var projects = {
 			}
 		}
 	}
-}
+};
 
 var education = {
 	"schools" : [
@@ -251,7 +251,7 @@ var education = {
 		}
 	],
 	display : function() {
-		for(school in education.schools)
+		for(var school in education.schools)
 		{
 			var formattedSchoolName = HTMLschoolName.replace("%data%",
 				education.schools[school].name);
@@ -279,7 +279,7 @@ var education = {
 		// the Education and Online Course sections
 		$("#education").append("<br>" + HTMLonlineClasses);
 
-		for(onlineCourse in education.onlineCourses)
+		for(var onlineCourse in education.onlineCourses)
 		{
 			var formattedOnlineTitle = HTMLonlineTitle.replace("%data%",
 				education.onlineCourses[onlineCourse].title);
@@ -303,7 +303,7 @@ var education = {
 
 	}
 
-}
+};
 
 // log location of every page click and number of page clicks
 var clicks = 0;
