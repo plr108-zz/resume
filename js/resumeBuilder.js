@@ -123,14 +123,10 @@ var work = {
 
 var projects = {
     "projects": [{
-        "title": "Tecmo Super Bowl Team Select Android Application",
-        "dates": "2014 - Present",
-        "description": "During football season I still play a lot of Tecmo Super Bowl with " + "my friends.  We play on the original Nintendo Entertainment System hardware, and " + "to keep it fair and interesting we needed a new way to pick our teams.  The game " + "does not have a random team select feature so I created this app (in 8-bit style " + "graphics and fonts to stay true to the game of course).  Here's how it works: the " + "app will present 3 random teams for each user to choose from.  The app will then " + "rate the players' team picks as well as show who has an advantage in the matchup.  " + "In the pictures below Player 2 picked the Raiders, and Player 1 picked the Eagles.  " + "Player 2 picked the best team presented so their name appears in green.  Player 1 " + "picked the second best team presented so their name appears in yellow.  (The worst " + "pick possible would cause a player's name to appear in red.)  In the game the " + "Raiders are a slightly better team than the Eagles, so the advantage arrow points " + "towards Player 2.",
-        "images": [
-            "images/project1image1.jpg",
-            "images/project1image2.jpg",
-            "images/project1image3.jpg"
-        ]
+        "title": "Neighborhood Map",
+        "dates": "January 2016 - February 2016",
+        "description": "Developed Web Application that uses Google Maps, Wikipedia, and Flickr to show information about the ballparks of Major League Baseball.  The app uses KnockoutJS and jQuery AJAX requests.",
+        "images": []
     }],
     display: function() {
         $("#projects").append(HTMLprojectStart);
