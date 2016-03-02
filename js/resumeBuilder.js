@@ -126,8 +126,26 @@ var projects = {
         "title": "Neighborhood Map",
         "dates": "January 2016 - February 2016",
         "description": "Developed Web Application that uses Google Maps, Wikipedia, and Flickr to show information about the ballparks of Major League Baseball.  The app uses KnockoutJS and jQuery AJAX requests.",
-        "images": [],
+        "images": ["images/FEND5-1.png"],
         "demoLink": "http://plr108.github.io/portfolio/FEND5-1/index.html"
+    }, {
+        "title": "Website Performance Optimization Project",
+        "dates": "December 2015",
+        "description": "Optimized a pre-existing website to achieve a <a class='inline-link underline-link' target='_blank' href='https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fplr108.github.io%2Fportfolio%2FFEND4%2Findex.html&tab=mobile'>PageSpeed Insights score of 94/100</a>.  Optimized a pre-existing, animation-intensive website to run at 60 fps.  Please see the README in the <a class='inline-link underline-link' target='_blank' href='https://github.com/plr108/FrontEndNanodegreeProject4'>GitHub Repository</a> for more information on the optimizations I made.",
+        "images": ["images/FEND4.png"],
+        "demoLink": "http://plr108.github.io/portfolio/FEND4/index.html"
+    }, {
+        "title": "Classic Arcade Game Clone",
+        "dates": "October 2015",
+        "description": "Created a clone of Frogger using Object-Oriented JavaScript and HTML5 Canvas.",
+        "images": ["images/FEND3.png"],
+        "demoLink": "http://plr108.github.io/portfolio/FEND3/index.html"
+    }, {
+        "title": "Freelance Project: Masterworks Concert Chorale website",
+        "dates": "October 2015 - Present",
+        "description": "Used KnockoutJS and Bootstrap to create a responsive web page for a non-profit concert group in Murrysville, Pennsylvania.  •	Trained concert chorale board member to maintain the site and make minor edits.  I show the December 2015 version of the site in my portfolio.  Here is a link to the <a class='inline-link underline-link' href='http://www.mccsings.com' target='_blank'>live site</a>.",
+        "images" : ["images/MCC.png"],
+        "demoLink": "http://plr108.github.io/portfolio/MCCKO/index.html"
     }],
     display: function() {
         $("#projects").append(HTMLprojectStart);

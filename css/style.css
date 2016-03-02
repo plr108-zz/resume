@@ -18,6 +18,14 @@ h6 {
     overflow: auto;
 }
 
+.inline-link {
+    display: inline;
+}
+
+.underline-link:hover {
+    text-decoration: underline;
+}
+
 .education-entry,
 .work-entry,
 .project-entry {
