@@ -19,8 +19,8 @@ var HTMLcontactGeneric = '<li class="flex-item"><span class="light-blue-text">%c
 var HTMLmobile = '<li class="flex-item"><span class="light-blue-text">Mobile</span><span class="white-text">%data%</span></li>';
 var HTMLemail = '<li class="flex-item"><span class="light-blue-text">Email</span><span class="white-text">%data%</span></li>';
 var HTMLlinkedin = '<li class="flex-item"><span class="light-blue-text">LinkedIn</span><span class="white-text">%data%</span></li>';
-var HTMLportfolio = '<li class="flex-item"><span class="light-blue-text">Portfolio</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="light-blue-text">GitHub</span><span class="white-text">%data%</span></li>';
+var HTMLportfolio = '<li class="flex-item"><span class="light-blue-text">Portfolio</span><span class="white-text"><a href="%link%" target="_blank">%data%</span></li>';
+var HTMLgithub = '<li class="flex-item"><span class="light-blue-text">GitHub</span><span class="white-text"><a href="%link%" target="_blank">%data%</a></span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="light-blue-text">Location</span><span class="white-text">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';

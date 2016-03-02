@@ -7,6 +7,9 @@ var bio = {
         "mobile": "724-875-3487",
         "email": "patrick.l.roche@gmail.com",
         "github": "plr108",
+        "githublink" : "https://github.com/plr108",
+        "portfolio" : "plr108.github.io",
+        "portfolioURL" : "https://plr108.github.io/",
         "linkedin": "patrickroche1",
         "location": "Irwin, PA"
     },
@@ -24,7 +27,8 @@ var bio = {
         var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
         var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
         var formattedLinkedIn = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
-        var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
+        var formattedPortfolio = HTMLportfolio.replace("%data%", bio.contacts.portfolio).replace("%link%", bio.contacts.portfolioURL);
+        var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github).replace("%link%", bio.contacts.githublink);
         var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
         var formattedBioPic = HTMLbioPic.replace("%data%", "images/me.jpg");
         var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
@@ -36,6 +40,7 @@ var bio = {
         $("#topContacts").append(formattedEmail);
         $("#topContacts").append(formattedLinkedIn);
         $("#topContacts").append(formattedGitHub);
+        $("#topContacts").append(formattedPortfolio);
         $("#topContacts").append(formattedLocation);
         $("#header").append(formattedBioPic);
         $("#header").append(formattedWelcomeMsg);
@@ -54,6 +59,7 @@ var bio = {
         $("#footerContacts").append(formattedMobile);
         $("#footerContacts").append(formattedEmail);
         $("#footerContacts").append(formattedGitHub);
+        $("#footerContacts").append(formattedPortfolio);
         $("#footerContacts").append(formattedLinkedIn);
         $("#footerContacts").append(formattedLocation);
 
