@@ -144,7 +144,7 @@ var projects = {
         "title": "Freelance Project: Masterworks Concert Chorale website",
         "dates": "October 2015 - Present",
         "description": "Used KnockoutJS and Bootstrap to create a responsive web page for a non-profit concert group in Murrysville, Pennsylvania.  •	Trained concert chorale board member to maintain the site and make minor edits.  I show the December 2015 version of the site in my portfolio.  Here is a link to the <a class='inline-link underline-link' href='http://www.mccsings.com' target='_blank'>live site</a>.",
-        "images" : ["images/MCC.png"],
+        "images": ["images/MCC.png"],
         "demoLink": "http://plr108.github.io/portfolio/MCCKO/index.html"
     }],
     display: function() {
@@ -176,14 +176,14 @@ var projects = {
 
 var education = {
     "schools": [{
-        "name": "Penn State University",
-        "location": "University Park, PA",
-        "degree": "Bachelor of Science",
+        "name": "Udacity",
+        "location": "Internet",
+        "degree": "Nanodegree",
         "majors": [
-            "Computer Science"
+            "Front-End Web Developer"
         ],
-        "dates": 2001,
-        "url": "http://www.psu.edu"
+        "dates": 2016,
+        "url": "https://www.udacity.com"
     }, {
         "name": "Penn State University",
         "location": "University Park, PA",
@@ -193,37 +193,46 @@ var education = {
         ],
         "dates": 2002,
         "url": "http://www.psu.edu"
+    }, {
+        "name": "Penn State University",
+        "location": "University Park, PA",
+        "degree": "Bachelor of Science",
+        "majors": [
+            "Computer Science"
+        ],
+        "dates": 2001,
+        "url": "http://www.psu.edu"
     }],
     "onlineCourses": [{
-        "title": "Intro to HTML and CSS",
+        "title": "Into to jQuery",
         "school": "Udacity",
         "date": 2015,
-        "url": "https://www.udacity.com/course/viewer#!/c-ud304-nd"
-    }, {
-        "title": "Responsive Web Design Fundamentals",
-        "school": "Udacity",
-        "date": 2015,
-        "url": "https://www.udacity.com/course/viewer#!/c-ud893-nd/l-3561069759"
-    }, {
-        "title": "Responsive Images",
-        "school": "Udacity",
-        "date": 2015,
-        "url": "https://www.udacity.com/course/viewer#!/c-ud882-nd/l-3574748851/m-3573228854"
-    }, {
-        "title": "How to Use Git and GitHub",
-        "school": "Udacity",
-        "date": 2015,
-        "url": "https://www.udacity.com/course/viewer#!/c-ud775-nd"
+        "url": "https://www.udacity.com/course/viewer#!/c-ud245-nd/l-3342528615/m-3343838767"
     }, {
         "title": "JavaScript Basics",
         "school": "Udacity",
         "date": 2015,
         "url": "https://www.udacity.com/course/viewer#!/c-ud804-nd/l-2239648539/e-1962768535/m-1950528601"
     }, {
-        "title": "Into to jQuery",
+        "title": "How to Use Git and GitHub",
         "school": "Udacity",
         "date": 2015,
-        "url": "https://www.udacity.com/course/viewer#!/c-ud245-nd/l-3342528615/m-3343838767"
+        "url": "https://www.udacity.com/course/viewer#!/c-ud775-nd"
+    }, {
+        "title": "Responsive Images",
+        "school": "Udacity",
+        "date": 2015,
+        "url": "https://www.udacity.com/course/viewer#!/c-ud882-nd/l-3574748851/m-3573228854"
+    }, {
+        "title": "Responsive Web Design Fundamentals",
+        "school": "Udacity",
+        "date": 2015,
+        "url": "https://www.udacity.com/course/viewer#!/c-ud893-nd/l-3561069759"
+    }, {
+        "title": "Intro to HTML and CSS",
+        "school": "Udacity",
+        "date": 2015,
+        "url": "https://www.udacity.com/course/viewer#!/c-ud304-nd"
     }],
     display: function() {
         for (var school in education.schools) {
