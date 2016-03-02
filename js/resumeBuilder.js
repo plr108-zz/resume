@@ -126,7 +126,8 @@ var projects = {
         "title": "Neighborhood Map",
         "dates": "January 2016 - February 2016",
         "description": "Developed Web Application that uses Google Maps, Wikipedia, and Flickr to show information about the ballparks of Major League Baseball.  The app uses KnockoutJS and jQuery AJAX requests.",
-        "images": []
+        "images": [],
+        "demoLink": "http://plr108.github.io/portfolio/FEND5-1/index.html"
     }],
     display: function() {
         $("#projects").append(HTMLprojectStart);
@@ -134,7 +135,7 @@ var projects = {
         for (var project in projects.projects) {
 
             var formattedProjectTitle = HTMLprojectTitle.replace("%data%",
-                projects.projects[project].title);
+                projects.projects[project].title).replace("%link%", projects.projects[project].demoLink);
             var formattedProjectDates = HTMLprojectDates.replace("%data%",
                 projects.projects[project].dates);
             var formattedProjectDescription = HTMLprojectDescription.replace("%data%",
