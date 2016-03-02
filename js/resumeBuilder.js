@@ -5,13 +5,17 @@ var bio = {
 
     "contacts": {
         "mobile": "724-875-3487",
+        "mobileLink": "tel:724-875-3487",
         "email": "patrick.l.roche@gmail.com",
+        "emailLink" : "mailto:patrick.l.roche@gmail.com",
         "github": "plr108",
-        "githublink" : "https://github.com/plr108",
+        "githubURL" : "https://github.com/plr108",
         "portfolio" : "plr108.github.io",
         "portfolioURL" : "https://plr108.github.io/",
         "linkedin": "patrickroche1",
-        "location": "Irwin, PA"
+        "linkedinURL": "https://www.linkedin.com/in/patrickroche1",
+        "location": "Irwin, PA",
+        "locationURL": "https://www.google.com/maps/place/Irwin,+PA+15642/@40.3189343,-79.7836634,12z/data=!3m1!4b1!4m2!3m1!1s0x8834dd3f7b945281:0x3ada31dc83155eba",
     },
 
     "skills": [
@@ -24,24 +28,25 @@ var bio = {
 
         var formattedName = HTMLheaderName.replace("%data%", bio.name);
         var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-        var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-        var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-        var formattedLinkedIn = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
+        var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile).replace("%link%", bio.contacts.mobileLink);
+        var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email).replace("%link%", bio.contacts.emailLink);
+        var formattedLinkedIn = HTMLlinkedin.replace("%data%", bio.contacts.linkedin).replace("%link%", bio.contacts.linkedinURL);
         var formattedPortfolio = HTMLportfolio.replace("%data%", bio.contacts.portfolio).replace("%link%", bio.contacts.portfolioURL);
-        var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github).replace("%link%", bio.contacts.githublink);
-        var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+        var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github).replace("%link%", bio.contacts.githubURL);
+        var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location).replace("%link%", bio.contacts.locationURL);
         var formattedBioPic = HTMLbioPic.replace("%data%", "images/me.jpg");
         var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
         $("#header").prepend(formattedRole);
         $("#header").prepend(formattedName);
 
-        $("#topContacts").append(formattedMobile);
-        $("#topContacts").append(formattedEmail);
-        $("#topContacts").append(formattedLinkedIn);
-        $("#topContacts").append(formattedGitHub);
-        $("#topContacts").append(formattedPortfolio);
-        $("#topContacts").append(formattedLocation);
+        // show contact info in header and footer
+        $("#topContacts, #footerContacts").append(formattedMobile);
+        $("#topContacts, #footerContacts").append(formattedEmail);
+        $("#topContacts, #footerContacts").append(formattedLinkedIn);
+        $("#topContacts, #footerContacts").append(formattedGitHub);
+        $("#topContacts, #footerContacts").append(formattedPortfolio);
+        $("#topContacts, #footerContacts").append(formattedLocation);
         $("#header").append(formattedBioPic);
         $("#header").append(formattedWelcomeMsg);
 
@@ -54,14 +59,6 @@ var bio = {
                 $("#skills").append(formattedSkill);
             }
         }
-
-        // show footer contact info
-        $("#footerContacts").append(formattedMobile);
-        $("#footerContacts").append(formattedEmail);
-        $("#footerContacts").append(formattedGitHub);
-        $("#footerContacts").append(formattedPortfolio);
-        $("#footerContacts").append(formattedLinkedIn);
-        $("#footerContacts").append(formattedLocation);
 
         // Show interactive map
         $("#mapDiv").append(googleMap);
