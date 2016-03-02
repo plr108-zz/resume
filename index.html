@@ -2,70 +2,71 @@
 <!--Udacity Front End Developer Nanodegree Project 2 Online Resume-->
 <!--By: Patrick Roche patrick.l.roche@gmail.com-->
 <!--Note: I removed most of the default comments in the project files for clarity-->
+
 <head>
-  <meta charset="utf-8">
-  <!--Prevent Mobile Safari from automatically detecting phone numbers-->
-  <!--Source: https://developers.google.com/web/fundamentals/native-hardware/click-to-call/?hl=en-->
-  <meta name="format-detection" content="telephone=no">
-  <!--Using Noto Sans instead of Roboto Font-->
-  <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-  <title>Patrick Roche Resume</title>
-  <link href="css/style.css" rel="stylesheet">
-  <script src="js/jquery-2.2.1.min.js"></script>
-  <script src="js/helper.js"></script>
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-  <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <!--Prevent Mobile Safari from automatically detecting phone numbers-->
+    <!--Source: https://developers.google.com/web/fundamentals/native-hardware/click-to-call/?hl=en-->
+    <meta name="format-detection" content="telephone=no">
+    <!--Using Noto Sans instead of Roboto Font-->
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <title>Patrick Roche Resume</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/helper.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <meta name="viewport" content="width=device-width">
 </head>
+
 <body>
-  <div id="main">
-    <div id="header" class="center-content clear-fix">
-      <ul id="topContacts" class="flex-box"></ul>
+    <div id="main">
+        <div id="header" class="center-content clear-fix">
+            <ul id="topContacts" class="flex-box"></ul>
+        </div>
+        <div id="projects">
+            <h2>Projects</h2>
+        </div>
+        <div id="education" class="gray">
+            <h2>Education</h2>
+        </div>
+        <div id="workExperience" class="gray">
+            <h2>Work Experience</h2>
+        </div>
+        <div id="mapDiv">
+            <h2>Where I've Lived and Worked</h2>
+        </div>
+        <div id="lets-connect" class="dark-gray">
+            <h2 class="light-blue center-text">Let's Connect</h2>
+            <ul id="footerContacts" class="flex-box">
+            </ul>
+        </div>
     </div>
-    <div style="clear: both;"></div>
-    <div id="workExperience" class="gray">
-      <h2>Work Experience</h2>
-    </div>
-    <div id="projects">
-      <h2>Projects</h2>
-    </div>
-    <div id="education" class="gray">
-      <h2>Education</h2>
-    </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-    </div>
-    <div id="lets-connect" class="dark-gray">
-      <h2 class="light-blue center-text">Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box">
-      </ul>
-    </div>
-  </div>
-
-  <script src="js/resumeBuilder.js"></script>
-  <script type="text/javascript">
-
+    <script src="js/resumeBuilder.js"></script>
+    <script type="text/javascript">
     // backgroundColor changed to skyblue to make the resume easier to read as I built it
-    if(document.getElementsByClassName("flex-item").length === 0) {
-      document.getElementById("topContacts").style.backgroundColor = "skyblue";
+    if (document.getElementsByClassName("flex-item").length === 0) {
+        document.getElementById("topContacts").style.backgroundColor = "skyblue";
     }
-    if(document.getElementsByTagName("h1").length === 0) {
-      document.getElementById("header").style.backgroundColor = "skyblue";
+    if (document.getElementsByTagName("h1").length === 0) {
+        document.getElementById("header").style.backgroundColor = "skyblue";
     }
-    if(document.getElementsByClassName("work-entry").length === 0) {
-      document.getElementById("workExperience").style.backgroundColor = "skyblue";
+    if (document.getElementsByClassName("work-entry").length === 0) {
+        document.getElementById("workExperience").style.backgroundColor = "skyblue";
     }
-    if(document.getElementsByClassName("project-entry").length === 0) {
-      document.getElementById("projects").style.backgroundColor = "skyblue";
+    if (document.getElementsByClassName("project-entry").length === 0) {
+        document.getElementById("projects").style.backgroundColor = "skyblue";
     }
-    if(document.getElementsByClassName("education-entry").length === 0) {
-      document.getElementById("education").style.backgroundColor = "skyblue";
+    if (document.getElementsByClassName("education-entry").length === 0) {
+        document.getElementById("education").style.backgroundColor = "skyblue";
     }
-    if(document.getElementsByClassName("flex-item").length === 0) {
-      document.getElementById("lets-connect").style.backgroundColor = "skyblue";
+    if (document.getElementsByClassName("flex-item").length === 0) {
+        document.getElementById("lets-connect").style.backgroundColor = "skyblue";
     }
-    if(document.getElementById("map") === null) {
-      document.getElementById("mapDiv").style.backgroundColor = "skyblue";
+    if (document.getElementById("map") === null) {
+        document.getElementById("mapDiv").style.backgroundColor = "skyblue";
     }
-header  </script>
+    header
+    </script>
 </body>
+
 </html>
