@@ -94,8 +94,7 @@ a {
 }
 
 .welcome-message {
-    font-style: italic;
-    font-size: 24px;
+    font-size: 20px;
     color: #f3f3f3;
     line-height: 28px;
 }
