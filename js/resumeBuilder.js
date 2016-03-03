@@ -204,34 +204,74 @@ var education = {
         "url": "http://www.psu.edu"
     }],
     "onlineCourses": [{
+        "title": "JavaScript Testing",
+        "school": "Udacity",
+        "date": "February 2016",
+        "url": "https://www.udacity.com/course/viewer#!/c-ud549-nd"
+    },{
+        "title": "JavaScript Design Patterns",
+        "school": "Udacity",
+        "date": "January 2016",
+        "url": "https://www.udacity.com/course/viewer#!/c-ud989-nd"
+    },{
+        "title": "Intro to AJAX",
+        "school": "Udacity",
+        "date": "December 2015",
+        "url": "https://www.udacity.com/course/viewer#!/c-ud110-nd"
+    },{
+        "title": "Writing READMEs",
+        "school": "Udacity",
+        "date": "December 2015",
+        "url": "https://www.udacity.com/course/viewer#!/c-ud777"
+    },{
+        "title": "Browser Performance Optimization",
+        "school": "Udacity",
+        "date": "November 2015",
+        "url": "https://www.udacity.com/course/viewer#!/c-ud860-nd"
+    },{
+        "title": "Website Performance Optimization",
+        "school": "Udacity",
+        "date": "October 2015",
+        "url": "https://www.udacity.com/course/viewer#!/c-ud884-nd"
+    },{
+        "title": "HTML5 Canvas",
+        "school": "Udacity",
+        "date": "October 2015",
+        "url": "https://www.udacity.com/course/viewer#!/c-ud292-nd"
+    },{
+        "title": "Object-Oriented JavaScript",
+        "school": "Udacity",
+        "date": "September 2015",
+        "url": "https://www.udacity.com/course/viewer#!/c-ud015-nd"
+    },{
         "title": "Into to jQuery",
         "school": "Udacity",
-        "date": 2015,
+        "date": "September 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud245-nd/l-3342528615/m-3343838767"
     }, {
         "title": "JavaScript Basics",
         "school": "Udacity",
-        "date": 2015,
+        "date": "September 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud804-nd/l-2239648539/e-1962768535/m-1950528601"
     }, {
         "title": "How to Use Git and GitHub",
         "school": "Udacity",
-        "date": 2015,
+        "date": "August 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud775-nd"
     }, {
         "title": "Responsive Images",
         "school": "Udacity",
-        "date": 2015,
+        "date": "July 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud882-nd/l-3574748851/m-3573228854"
     }, {
         "title": "Responsive Web Design Fundamentals",
         "school": "Udacity",
-        "date": 2015,
+        "date": "July 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud893-nd/l-3561069759"
     }, {
         "title": "Intro to HTML and CSS",
         "school": "Udacity",
-        "date": 2015,
+        "date": "July 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud304-nd"
     }],
     display: function() {
