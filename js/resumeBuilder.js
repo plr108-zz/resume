@@ -67,34 +67,33 @@ var bio = {
 
 var work = {
     "jobs": [{
-        "employer": "Philips",
-        "title": "Senior Engineering Specialist",
-        "location": "Plum, PA",
+        "employer": "Philips Healthcare",
+        "title": "Process Control Engineer",
+        "location": "Pittsburgh, PA",
         "dates": "2010 - Present",
-        "description": "I create and validate the processes used to service medical devices." + "  I also review deliverables for device testing software written in C, C++, and " + "National Instruments LabVIEW.",
-        // I add a URL key to all items in the jobs array
-        "url": "http://www.philips.com"
+        "description": "Lead the development of processes to remanufacture medical devices at Philips and external service centers.  Create validation strategies to ensure processes conform to quality system and Food and Drug Administration requirements.  Develop and execute test protocols to qualify service processes and to confirm proper equipment installation.",
+        "url": "http://www.usa.philips.com/healthcare"
     }, {
         "employer": "Bechtel Plant Machinery Incorporated",
-        "title": "Supplier Quality Assurance Engineer",
+        "title": "Quality Assurance Engineer",
         "location": "Monroeville, PA",
         "dates": "2008 - 2010",
-        "description": "I ensured that our company's instrumentation and control system " + "suppliers provided equipment that met Navy Nuclear Program quality system and " + "contract requirements.",
+        "description": "Evaluated capability of Naval Nuclear Propulsion Program suppliers to manufacture equipment per contract requirements.  Reviewed supplier hardware and software deliverables prior to accepting equipment.",
         "url": "http://www.bpmionline.com"
     }, {
         "employer": "US Army PM Transportation Information Systems",
-        "title": "Software Group Lead",
+        "title": "Group Lead, Software Engineering and Interoperability",
         "location": "Springfield, VA",
         "dates": "2005 - 2008",
-        "description": "I developed software that managed military transportation operations.  " + "I managed interfaces with other military systems, developed data exchange " + "software in Java EE, and displayed transportation-related information in web " + "applications using JavaScript and jQuery.  I also managed the work of a team " + "of three software development task leads and about 25 software developers.",
+        "description": "Lead software development group that developed Enterprise Resource Planning solutions for military deployment, distribution, and air load planning.  Managed three development leads responsible for coordinating the work of about 25 software developers.  Reviewed Java and JavaScript software deliverables and provided recommendations on software acceptance.  Minimized system interface complexity by reducing touchpoints with other Department of Defense systems and standardizing XML data formats.",
         "url": "http://www.pdamis.army.mil/"
     }, {
         "employer": "Naval Surface Warfare Center Dahlgren Division",
         "title": "Software Engineer",
         "location": "Dahlgren, VA",
         "dates": "2003 - 2005",
-        "description": "I developed software used in the configuration and certification of " + "US navy tactical data and radar systems.  I created components of a software " + "model in C++ that was used to simulate tactical systems of US Navy strike " + "groups during combat scenarios.  I also developed components of a web-based " + "software project management system used to plan, execute, and assess combat " + "system interoperability tests.",
-        "url": "http://www.navy.mil/local/NSWCDD/"
+        "description": "Developed tactical data and radar simulation software using C, C++ and Microsoft Visual C++.  Created components of a software model used to identify potential tactical system interoperability issues.  Maintained a web application used to plan, execute, and assess combat system interoperability tests.",
+        "url": "http://www.navsea.navy.mil/Home/WarfareCenters/NSWCDahlgren.aspx"
     }],
     display: function() {
 
@@ -141,9 +140,9 @@ var projects = {
         "images": ["images/FEND3.png"],
         "demoLink": "http://plr108.github.io/portfolio/FEND3/index.html"
     }, {
-        "title": "Freelance Project: Masterworks Concert Chorale website",
+        "title": "Freelance Project: Masterworks Concert Chorale Website",
         "dates": "October 2015 - Present",
-        "description": "Used KnockoutJS and Bootstrap to create a responsive web page for a non-profit concert group in Murrysville, Pennsylvania.  •	Trained concert chorale board member to maintain the site and make minor edits.  I show the December 2015 version of the site in my portfolio.  Here is a link to the <a class='inline-link underline-link' href='http://www.mccsings.com' target='_blank'>live site</a>.",
+        "description": "Used KnockoutJS and Bootstrap to create a responsive web page for a non-profit concert group in Murrysville, Pennsylvania.  Trained concert chorale board member to maintain the site and make minor edits.  I show the December 2015 version of the site in my portfolio.  Here is a link to the <a class='inline-link underline-link' href='http://www.mccsings.com' target='_blank'>live site</a>.",
         "images": ["images/MCC.png"],
         "demoLink": "http://plr108.github.io/portfolio/MCCKO/index.html"
     }],
@@ -208,42 +207,42 @@ var education = {
         "school": "Udacity",
         "date": "February 2016",
         "url": "https://www.udacity.com/course/viewer#!/c-ud549-nd"
-    },{
+    }, {
         "title": "JavaScript Design Patterns",
         "school": "Udacity",
         "date": "January 2016",
         "url": "https://www.udacity.com/course/viewer#!/c-ud989-nd"
-    },{
+    }, {
         "title": "Intro to AJAX",
         "school": "Udacity",
         "date": "December 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud110-nd"
-    },{
+    }, {
         "title": "Writing READMEs",
         "school": "Udacity",
         "date": "December 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud777"
-    },{
+    }, {
         "title": "Browser Performance Optimization",
         "school": "Udacity",
         "date": "November 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud860-nd"
-    },{
+    }, {
         "title": "Website Performance Optimization",
         "school": "Udacity",
         "date": "October 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud884-nd"
-    },{
+    }, {
         "title": "HTML5 Canvas",
         "school": "Udacity",
         "date": "October 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud292-nd"
-    },{
+    }, {
         "title": "Object-Oriented JavaScript",
         "school": "Udacity",
         "date": "September 2015",
         "url": "https://www.udacity.com/course/viewer#!/c-ud015-nd"
-    },{
+    }, {
         "title": "Into to jQuery",
         "school": "Udacity",
         "date": "September 2015",
