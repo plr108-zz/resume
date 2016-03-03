@@ -102,7 +102,7 @@ a {
 }
 
 .welcome-message {
-    font-size: 18px;
+    font-size: 16px;
     color: #f3f3f3;
     line-height: 28px;
     max-width: 650px;
@@ -218,6 +218,44 @@ span {
     }
     .welcome-message {
         font-size: 14px;
+    }
+}
+
+.contact.flex-item {
+    padding-bottom: 5px;
+}
+
+
+/* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
+
+@media only screen and (max-width: 749px) and (min-width: 650px) {
+    #topContacts,
+    #footerContacts {
+        display: block;
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+        height: 85px;
+        text-align: left;
+    }
+}
+
+
+/* Show contact info in one column. */
+
+@media only screen and (max-width: 649px) {
+    #topContacts,
+    #footerContacts {
+        display: block;
+        text-align: left;
+    }
+
+    .welcome-message{
+        background-color: purple;
+        display: block;
     }
 }
 
