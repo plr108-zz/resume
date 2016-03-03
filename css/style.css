@@ -252,9 +252,7 @@ span {
         display: block;
         text-align: left;
     }
-
-    .welcome-message{
-        background-color: purple;
+    .welcome-message {
         display: block;
     }
 }
