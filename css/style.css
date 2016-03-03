@@ -105,6 +105,7 @@ a {
     font-size: 18px;
     color: #f3f3f3;
     line-height: 28px;
+    max-width: 650px;
 }
 
 #skills-h3 {
