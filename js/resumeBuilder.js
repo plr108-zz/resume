@@ -326,7 +326,9 @@ var education = {
 
 };
 
+bio.display();
+projects.display();
 education.display();
 work.display();
-projects.display();
-bio.display();
+
+
