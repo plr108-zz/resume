@@ -1,7 +1,7 @@
 var bio = {
     "name": "Patrick Roche",
     "role": "Web Developer",
-    "welcomeMessage": "I’m a Recent Udacity Front-End Web Developer Nanodegree graduate with 14+ years of professional problem solving experience and a passion for all things web and mobile.  My portfolio includes examples of responsive web design, website performance optimization, object-oriented JavaScript, and web applications accessing JavaScript APIs via AJAX requests.  I’m familiar with working on remote teams using Google Hangouts, Slack, and Git/GitHub, and have 5 years of experience developing software using Java and C++.",
+    "welcomeMessage": "I’m a Recent Udacity Front-End Web Developer Nanodegree graduate with 14+ years of professional problem solving experience and a passion for all things web and mobile.  I have recent project experience with responsive web design, website performance optimization, object-oriented JavaScript, and web applications accessing JavaScript APIs via AJAX requests.  I’m familiar with working on remote teams using Google Hangouts, Slack, and Git/GitHub, and have 5 years of experience developing software using Java and C++.",
 
     "contacts": {
         "mobile": "724-875-3487",
