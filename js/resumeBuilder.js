@@ -94,6 +94,13 @@ var work = {
         "dates": "2003 - 2005",
         "description": "Developed tactical data and radar simulation software using C, C++ and Microsoft Visual C++.  Created components of a software model used to identify potential tactical system interoperability issues.  Maintained a web application used to plan, execute, and assess combat system interoperability tests.",
         "url": "http://www.navsea.navy.mil/Home/WarfareCenters/NSWCDahlgren.aspx"
+    }, {
+        "employer": "United States Steel Corporation",
+        "title": "Engineering Intern",
+        "location": "Dravosburg, PA",
+        "dates": "1999 - 2002",
+        "description": "Developed supervisory, control, and data acquisition software using C, C++, and Microsoft Visual C++.",
+        "url": "https://www.ussteel.com/uss/portal/home"
     }],
     display: function() {
 
@@ -330,5 +337,3 @@ bio.display();
 projects.display();
 education.display();
 work.display();
-
-
