@@ -138,7 +138,7 @@ var projects = {
         "dates": "October 2015",
         "description": "Created a clone of Frogger using Object-Oriented JavaScript and HTML5 Canvas.",
         "images": ["images/FEND3.png"],
-        "demoLink": "http://plr108.github.io/feed-the-ladybugs"
+        "demoLink": "http://plr108.github.io/feed-the-ladybugs/index.html"
     }, {
         "title": "Website Performance Optimization Project",
         "dates": "December 2015",
