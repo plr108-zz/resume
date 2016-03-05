@@ -1,8 +1,7 @@
 var bio = {
     "name": "Patrick Roche",
     "role": "Web Developer",
-    "welcomeMessage": "I’m a Recent Udacity Front-End Web Developer Nanodegree graduate with 14+ years of professional problem solving experience and a passion for all things web and mobile.  I have project experience with responsive web design, website performance optimization, object-oriented JavaScript, and web applications accessing JavaScript APIs via AJAX requests.  I’m familiar with working on remote teams using Google Hangouts, Slack, and Git/GitHub, and have 5 years of experience developing software using Java and C++.",
-
+    "welcomeMessage": "Web developer with 14+ years of professional problem solving experience including application development and user interface design.  Passionate about web and mobile, and eager to leverage skills built in the defense and medical device industries into a front-end development position.",
     "contacts": {
         "mobile": "724-875-3487",
         "mobileLink": "tel:724-875-3487",
@@ -133,25 +132,25 @@ var projects = {
         "dates": "January 2016 - February 2016",
         "description": "Developed Web Application that uses Google Maps, Wikipedia, and Flickr to show information about the ballparks of Major League Baseball.  The app uses KnockoutJS and jQuery AJAX requests.",
         "images": ["images/FEND5-1.png"],
-        "demoLink": "http://plr108.github.io/portfolio/FEND5-1/index.html"
-    }, {
-        "title": "Website Performance Optimization Project",
-        "dates": "December 2015",
-        "description": "Optimized a pre-existing website to achieve a <a class='inline-link underline-link' target='_blank' href='https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fplr108.github.io%2Fportfolio%2FFEND4%2Findex.html&tab=mobile'>PageSpeed Insights score of 94/100</a>.  Optimized a pre-existing, animation-intensive website to run at 60 fps.  Please see the README in the <a class='inline-link underline-link' target='_blank' href='https://github.com/plr108/FrontEndNanodegreeProject4'>GitHub Repository</a> for more information on the optimizations I made.",
-        "images": ["images/FEND4.png"],
-        "demoLink": "http://plr108.github.io/portfolio/FEND4/index.html"
+        "demoLink": "http://plr108.github.io/ballpark-map/index.html"
     }, {
         "title": "Classic Arcade Game Clone",
         "dates": "October 2015",
         "description": "Created a clone of Frogger using Object-Oriented JavaScript and HTML5 Canvas.",
         "images": ["images/FEND3.png"],
-        "demoLink": "http://plr108.github.io/portfolio/FEND3/index.html"
+        "demoLink": "http://plr108.github.io/feed-the-ladybugs"
+    }, {
+        "title": "Website Performance Optimization Project",
+        "dates": "December 2015",
+        "description": "Optimized a pre-existing website to achieve a <a class='inline-link underline-link' target='_blank' href='https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fplr108.github.io%2Fwebsite-optimization%2Findex.html'>PageSpeed Insights score of 94/100</a>.  Optimized a pre-existing, animation-intensive website to run at 60 fps.  Please see the README in the <a class='inline-link underline-link' target='_blank' href='https://github.com/plr108/website-optimization'>GitHub Repository</a> for more information on the optimizations I made.",
+        "images": ["images/FEND4.png"],
+        "demoLink": "http://plr108.github.io/website-optimization/index.html"
     }, {
         "title": "Freelance Project: Masterworks Concert Chorale Website",
         "dates": "October 2015 - Present",
         "description": "Used KnockoutJS and Bootstrap to create a responsive web page for a non-profit concert group in Murrysville, Pennsylvania.  Trained concert chorale board member to maintain the site and make minor edits.  I show the December 2015 version of the site in my portfolio.  Here is a link to the <a class='inline-link underline-link' href='http://www.mccsings.com' target='_blank'>live site</a>.",
         "images": ["images/MCC.png"],
-        "demoLink": "http://plr108.github.io/portfolio/MCCKO/index.html"
+        "demoLink": "http://plr108.github.io/mccsings/index.html"
     }],
     display: function() {
         $("#projects").append(HTMLprojectStart);
