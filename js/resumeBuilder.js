@@ -142,9 +142,9 @@ var projects = {
     }, {
         "title": "Website Performance Optimization Project",
         "dates": "December 2015",
-        "description": "Optimized a pre-existing website to achieve a <a class='inline-link underline-link' target='_blank' href='https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fplr108.github.io%2Fwebsite-optimization%2Findex.html'>PageSpeed Insights score of 94/100</a>.  Optimized a pre-existing, animation-intensive website to run at 60 fps.  Please see the README in the <a class='inline-link underline-link' target='_blank' href='https://github.com/plr108/website-optimization'>GitHub Repository</a> for more information on the optimizations I made.",
+        "description": "Optimized a pre-existing website to achieve a <a class='inline-link underline-link' target='_blank' href='https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fplr108.github.io%2Fweb-perf%2Findex.html'>PageSpeed Insights score of 94/100</a>.  Optimized a pre-existing, animation-intensive website to run at 60 fps.  Please see the README in the <a class='inline-link underline-link' target='_blank' href='https://github.com/plr108/website-optimization'>GitHub Repository</a> for more information on the optimizations I made.",
         "images": ["images/FEND4.png"],
-        "demoLink": "http://plr108.github.io/website-optimization/index.html"
+        "demoLink": "http://plr108.github.io/web-perf/index.html"
     }, {
         "title": "Freelance Project: Masterworks Concert Chorale Website",
         "dates": "October 2015 - Present",
