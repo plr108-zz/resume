@@ -79,20 +79,82 @@ ul {
     list-style-type: none;
 }
 
-.clear-fix {
-    overflow: auto;
+.education-entry,
+.work-entry,
+.project-entry {
+    padding: 0 5%;
 }
 
-.inline-link {
-    display: inline;
+.biopic {
+    float: left;
+    padding: 10px;
+    width: 200px;
+    display: block;
+}
+
+.center-content {
+    padding: 2.5% 5%;
+}
+
+.clear-fix {
+    overflow: auto;
 }
 
 .contact.flex-item {
     padding-bottom: 5px;
 }
 
-.underline-link:hover {
-    text-decoration: underline;
+.dark-gray {
+    background-color: #4a4a4a;
+}
+
+.date-text {
+    font-style: italic;
+    font-size: 14px;
+    color: #999;
+    line-height: 16px;
+    float: left;
+}
+
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.gray {
+    background-color: #f3f3f3;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+.inline-link {
+    display: inline;
+}
+
+
+.light-blue {
+    background-color: #85a3f3;
+}
+
+.light-blue-text {
+    color: #85a3f3;
+}
+
+.location-text {
+    font-style: italic;
+    font-size: 14px;
+    color: #999;
+    line-height: 16px;
+    float: right;
+}
+
+
+.project-image {
+    display: block;
 }
 
 .project-image-container {
@@ -104,30 +166,17 @@ ul {
     margin: 0;
 }
 
-.project-image {
-    display: block;
+
+
+
+
+.skills-header {
+    color: #85a3f3;
+    clear: both;
 }
 
-.education-entry,
-.work-entry,
-.project-entry {
-    padding: 0 5%;
-}
-
-.date-text {
-    font-style: italic;
-    font-size: 14px;
-    color: #999;
-    line-height: 16px;
-    float: left;
-}
-
-.location-text {
-    font-style: italic;
-    font-size: 14px;
-    color: #999;
-    line-height: 16px;
-    float: right;
+.underline-link:hover {
+    text-decoration: underline;
 }
 
 .welcome-message {
@@ -135,19 +184,6 @@ ul {
     color: #f3f3f3;
     line-height: 28px;
     max-width: 650px;
-}
-
-.skills-header {
-    color: #85a3f3;
-    clear: both;
-}
-
-.light-blue {
-    background-color: #85a3f3;
-}
-
-.light-blue-text {
-    color: #85a3f3;
 }
 
 .white-text {
@@ -164,38 +200,14 @@ ul {
     color: orange;
 }
 
-.gray {
-    background-color: #f3f3f3;
-    padding-bottom: 10px;
-    clear: both;
-}
-
-.dark-gray {
-    background-color: #4a4a4a;
-}
-
 #header {
     background-color: #0f1f4c;
 }
 
-.flex-box {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-}
-
-.center-content {
-    padding: 2.5% 5%;
-}
-
-.biopic {
-    float: left;
-    padding: 10px;
-    width: 200px;
-    display: block;
+#lets-connect {
+    text-align: center;
+    color: #3366ff;
+    background-color: #0f1f4c;
 }
 
 #map {
@@ -210,12 +222,6 @@ ul {
     padding-bottom: 5%;
 }
 
-#lets-connect {
-    text-align: center;
-    color: #3366ff;
-    background-color: #0f1f4c;
-}
-
 
 /* Media queries to handle various device widths */
 
@@ -224,6 +230,7 @@ ul {
         display: block;
     }
 }
+
 
 /* Show contact info in one column. */
 
@@ -239,6 +246,7 @@ ul {
         line-height: 24px;
     }
 }
+
 
 /* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
 
