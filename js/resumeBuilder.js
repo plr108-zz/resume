@@ -60,6 +60,7 @@ var bio = {
         }
 
         // Show interactive map
+        $("#locations").append('<div id="mapDiv"></div>');
         $("#mapDiv").append(googleMap);
     }
 };

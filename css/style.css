@@ -203,12 +203,6 @@ span {
 
 /* Media queries to handle various device widths */
 
-@media only screen and (max-width: 1024px) {
-    #lets-connect {
-        margin-top: 5%;
-    }
-}
-
 @media only screen and (max-width:900px) {
     .biopic {
         width: 175px;
@@ -223,14 +217,12 @@ span {
 }
 
 @media only screen and (max-width: 749px) {
-    #lets-connect {
-        margin-top: 10%;
-    }
     .biopic {
         width: 150px;
     }
     .welcome-message {
         font-size: 14px;
+        line-height: 24px;
     }
 }
 
@@ -267,6 +259,8 @@ span {
     }
     .welcome-message {
         display: block;
+        font-size: 14px;
+        line-height: 24px;
     }
 }
 
