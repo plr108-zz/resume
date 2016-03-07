@@ -1,48 +1,31 @@
 body,
 div,
-ul,
-li,
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+li,
+p,
+ul {
     padding: 0;
     margin: 0;
     font-family: "Noto Sans", sans-serif;
 }
 
-.clear-fix {
-    overflow: auto;
+h2,
+h3,
+h4,
+h5 {
+    padding: 10px 5%;
 }
 
-.inline-link {
-    display: inline;
-}
-
-.underline-link:hover {
-    text-decoration: underline;
-}
-
-.project-image-container {
-    display: inline-block;
-}
-
-.project-image-container a {
+a {
+    color: #092568;
+    text-decoration: none;
+    margin-top: 10px;
     display: block;
-    margin: 0;
-}
-
-.project-image {
-    display: block;
-}
-
-.education-entry,
-.work-entry,
-.project-entry {
-    padding: 0 5%;
 }
 
 h1 {
@@ -78,11 +61,57 @@ h4 {
     line-height: 17px;
 }
 
-h2,
-h3,
-h4,
-h5 {
-    padding: 10px 5%;
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
+}
+
+span {
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clear-fix {
+    overflow: auto;
+}
+
+.inline-link {
+    display: inline;
+}
+
+.contact.flex-item {
+    padding-bottom: 5px;
+}
+
+.underline-link:hover {
+    text-decoration: underline;
+}
+
+.project-image-container {
+    display: inline-block;
+}
+
+.project-image-container a {
+    display: block;
+    margin: 0;
+}
+
+.project-image {
+    display: block;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+    padding: 0 5%;
 }
 
 .date-text {
@@ -99,19 +128,6 @@ h5 {
     color: #999;
     line-height: 16px;
     float: right;
-}
-
-p {
-    font-size: 14px;
-    color: #333;
-    line-height: 21px;
-}
-
-a {
-    color: #092568;
-    text-decoration: none;
-    margin-top: 10px;
-    display: block;
 }
 
 .welcome-message {
@@ -175,10 +191,6 @@ a {
     padding: 2.5% 5%;
 }
 
-ul {
-    list-style-type: none;
-}
-
 .biopic {
     float: left;
     padding: 10px;
@@ -186,12 +198,16 @@ ul {
     display: block;
 }
 
-img {
-    max-width: 100%;
+#map {
+    display: block;
+    height: 100%;
+    margin: 0 5%;
 }
 
-span {
-    padding: 5px;
+#mapDiv {
+    height: 400px;
+    width: 100%;
+    padding-bottom: 5%;
 }
 
 #lets-connect {
@@ -203,51 +219,11 @@ span {
 
 /* Media queries to handle various device widths */
 
-@media only screen and (max-width:900px) {
-    .biopic {
-        width: 175px;
-    }
-}
-
-@media only screen and (min-width: 750px) {
-    .skills-header,
-    .biopic {
+@media only screen and (max-width: 450px) {
+    #role {
         display: block;
     }
 }
-
-@media only screen and (max-width: 749px) {
-    .biopic {
-        width: 150px;
-    }
-    .welcome-message {
-        font-size: 14px;
-        line-height: 24px;
-    }
-}
-
-.contact.flex-item {
-    padding-bottom: 5px;
-}
-
-
-/* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
-
-@media only screen and (max-width: 749px) and (min-width: 650px) {
-    #topContacts,
-    #footerContacts {
-        display: block;
-        -moz-column-count: 2;
-        -moz-column-gap: 20px;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 20px;
-        column-count: 2;
-        column-gap: 20px;
-        height: 85px;
-        text-align: left;
-    }
-}
-
 
 /* Show contact info in one column. */
 
@@ -264,20 +240,42 @@ span {
     }
 }
 
-#map {
-    display: block;
-    height: 100%;
-    margin: 0 5%;
-}
+/* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
 
-#mapDiv {
-    height: 400px;
-    width: 100%;
-    padding-bottom: 5%;
-}
-
-@media only screen and (max-width: 450px) {
-    #role {
+@media only screen and (min-width: 650px) and (max-width: 749px) {
+    #topContacts,
+    #footerContacts {
         display: block;
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+        height: 85px;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    .biopic {
+        width: 150px;
+    }
+    .welcome-message {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .skills-header,
+    .biopic {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .biopic {
+        width: 175px;
     }
 }
