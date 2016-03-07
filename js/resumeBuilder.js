@@ -65,68 +65,6 @@ var bio = {
     }
 };
 
-var work = {
-    "jobs": [{
-        "employer": "Philips Healthcare",
-        "title": "Process Control Engineer",
-        "location": "Pittsburgh, PA",
-        "dates": "2010 - Present",
-        "description": "Lead the development of processes to remanufacture medical devices at Philips and external service centers.  Create validation strategies to ensure processes conform to quality system and Food and Drug Administration requirements.  Develop and execute test protocols to qualify service processes and to confirm proper equipment installation.",
-        "url": "http://www.usa.philips.com/healthcare"
-    }, {
-        "employer": "Bechtel Plant Machinery Incorporated",
-        "title": "Quality Assurance Engineer",
-        "location": "Monroeville, PA",
-        "dates": "2008 - 2010",
-        "description": "Evaluated capability of Naval Nuclear Propulsion Program suppliers to manufacture equipment per contract requirements.  Reviewed supplier hardware and software deliverables prior to accepting equipment.",
-        "url": "http://www.bpmionline.com"
-    }, {
-        "employer": "US Army PM Transportation Information Systems",
-        "title": "Group Lead, Software Engineering and Interoperability",
-        "location": "Springfield, VA",
-        "dates": "2005 - 2008",
-        "description": "Lead software development group that developed Enterprise Resource Planning solutions for military deployment, distribution, and air load planning.  Managed three development leads responsible for coordinating the work of about 25 software developers.  Reviewed Java and JavaScript software deliverables and provided recommendations on software acceptance.  Minimized system interface complexity by reducing touchpoints with other Department of Defense systems and standardizing XML data formats.",
-        "url": "http://www.pdamis.army.mil/"
-    }, {
-        "employer": "Naval Surface Warfare Center Dahlgren Division",
-        "title": "Software Engineer",
-        "location": "Dahlgren, VA",
-        "dates": "2003 - 2005",
-        "description": "Developed tactical data and radar simulation software using C, C++ and Microsoft Visual C++.  Created components of a software model used to identify potential tactical system interoperability issues.  Maintained a web application used to plan, execute, and assess combat system interoperability tests.",
-        "url": "http://www.navsea.navy.mil/Home/WarfareCenters/NSWCDahlgren.aspx"
-    }, {
-        "employer": "United States Steel Corporation",
-        "title": "Engineering Intern",
-        "location": "Dravosburg, PA",
-        "dates": "1999 - 2002",
-        "description": "Developed supervisory, control, and data acquisition software using C, C++, and Microsoft Visual C++.",
-        "url": "https://www.ussteel.com/uss/portal/home"
-    }],
-    display: function() {
-
-        for (var job in work.jobs) {
-            var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-            // add work URL to formattedEmployer.  URL opens in a new browser window.
-            formattedEmployer = formattedEmployer.replace("#", work.jobs[job].url + "\"" + " target=\"_blank\"");
-            var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-            var formattedEmployerTitle = formattedEmployer + formattedTitle;
-
-
-            var formattedWorkLocation = HTMLworkLocation.replace("%data%",
-                work.jobs[job].location);
-            var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-            var formattedWorkDescription = HTMLworkDescription.replace("%data%",
-                work.jobs[job].description);
-
-            $("#workExperience").append(HTMLworkStart);
-            $(".work-entry:last").append(formattedEmployerTitle);
-            $(".work-entry:last").append(formattedWorkLocation);
-            $(".work-entry:last").append(formattedWorkDates);
-            $(".work-entry:last").append(formattedWorkDescription);
-        }
-    }
-};
-
 var projects = {
     "projects": [{
         "title": "Neighborhood Map",
@@ -333,6 +271,67 @@ var education = {
 
 };
 
+var work = {
+    "jobs": [{
+        "employer": "Philips Healthcare",
+        "title": "Process Control Engineer",
+        "location": "Pittsburgh, PA",
+        "dates": "2010 - Present",
+        "description": "Lead the development of processes to remanufacture medical devices at Philips and external service centers.  Create validation strategies to ensure processes conform to quality system and Food and Drug Administration requirements.  Develop and execute test protocols to qualify service processes and to confirm proper equipment installation.",
+        "url": "http://www.usa.philips.com/healthcare"
+    }, {
+        "employer": "Bechtel Plant Machinery Incorporated",
+        "title": "Quality Assurance Engineer",
+        "location": "Monroeville, PA",
+        "dates": "2008 - 2010",
+        "description": "Evaluated capability of Naval Nuclear Propulsion Program suppliers to manufacture equipment per contract requirements.  Reviewed supplier hardware and software deliverables prior to accepting equipment.",
+        "url": "http://www.bpmionline.com"
+    }, {
+        "employer": "US Army PM Transportation Information Systems",
+        "title": "Group Lead, Software Engineering and Interoperability",
+        "location": "Springfield, VA",
+        "dates": "2005 - 2008",
+        "description": "Lead software development group that developed Enterprise Resource Planning solutions for military deployment, distribution, and air load planning.  Managed three development leads responsible for coordinating the work of about 25 software developers.  Reviewed Java and JavaScript software deliverables and provided recommendations on software acceptance.  Minimized system interface complexity by reducing touchpoints with other Department of Defense systems and standardizing XML data formats.",
+        "url": "http://www.pdamis.army.mil/"
+    }, {
+        "employer": "Naval Surface Warfare Center Dahlgren Division",
+        "title": "Software Engineer",
+        "location": "Dahlgren, VA",
+        "dates": "2003 - 2005",
+        "description": "Developed tactical data and radar simulation software using C, C++ and Microsoft Visual C++.  Created components of a software model used to identify potential tactical system interoperability issues.  Maintained a web application used to plan, execute, and assess combat system interoperability tests.",
+        "url": "http://www.navsea.navy.mil/Home/WarfareCenters/NSWCDahlgren.aspx"
+    }, {
+        "employer": "United States Steel Corporation",
+        "title": "Engineering Intern",
+        "location": "Dravosburg, PA",
+        "dates": "1999 - 2002",
+        "description": "Developed supervisory, control, and data acquisition software using C, C++, and Microsoft Visual C++.",
+        "url": "https://www.ussteel.com/uss/portal/home"
+    }],
+    display: function() {
+
+        for (var job in work.jobs) {
+            var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+            // add work URL to formattedEmployer.  URL opens in a new browser window.
+            formattedEmployer = formattedEmployer.replace("#", work.jobs[job].url + "\"" + " target=\"_blank\"");
+            var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+            var formattedEmployerTitle = formattedEmployer + formattedTitle;
+
+
+            var formattedWorkLocation = HTMLworkLocation.replace("%data%",
+                work.jobs[job].location);
+            var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+            var formattedWorkDescription = HTMLworkDescription.replace("%data%",
+                work.jobs[job].description);
+
+            $("#workExperience").append(HTMLworkStart);
+            $(".work-entry:last").append(formattedEmployerTitle);
+            $(".work-entry:last").append(formattedWorkLocation);
+            $(".work-entry:last").append(formattedWorkDates);
+            $(".work-entry:last").append(formattedWorkDescription);
+        }
+    }
+};
 bio.display();
 projects.display();
 education.display();
