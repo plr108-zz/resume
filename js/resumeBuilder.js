@@ -48,9 +48,9 @@ var bio = {
         $("#topContacts, #footerContacts").append(formattedLocation);
         $("#header").append(formattedBioPic);
         $("#header").append(formattedWelcomeMsg);
-
+        $("#header").append('<div id="skills-container"></div>');
         if (bio.skills.length > 0) {
-            $("#header").append(HTMLskillsStart);
+            $("#skills-container").append(HTMLskillsStart);
 
             var formattedSkill = null;
             for (var i = 0; i < bio.skills.length; i++) {
