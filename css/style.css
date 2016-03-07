@@ -121,7 +121,7 @@ a {
     max-width: 650px;
 }
 
-#skills-h3 {
+.skills-header {
     color: #85a3f3;
     clear: both;
 }
@@ -210,7 +210,7 @@ span {
 }
 
 @media only screen and (min-width: 750px) {
-    #skills-h3,
+    .skills-header,
     .biopic {
         display: block;
     }
