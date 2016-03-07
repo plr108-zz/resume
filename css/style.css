@@ -26,6 +26,19 @@ h6 {
     text-decoration: underline;
 }
 
+.project-image-container {
+    display: inline-block;
+}
+
+.project-image-container a {
+    display: block;
+    margin: 0;
+}
+
+.project-image {
+    display: block;
+}
+
 .education-entry,
 .work-entry,
 .project-entry {
