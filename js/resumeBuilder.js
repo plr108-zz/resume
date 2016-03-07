@@ -277,35 +277,35 @@ var work = {
         "title": "Process Control Engineer",
         "location": "Pittsburgh, PA",
         "dates": "2010 - Present",
-        "description": "Lead the development of processes to remanufacture medical devices at Philips and external service centers.  Create validation strategies to ensure processes conform to quality system and Food and Drug Administration requirements.  Develop and execute test protocols to qualify service processes and to confirm proper equipment installation.",
+        "description": "Lead the development of processes to remanufacture medical devices at over 55 Philips and external service centers.  Create validation strategies for 24 product lines resulting in zero major findings in internal and external audits.  Continually improving the procedures related to process validation, including reducing equipment qualification times by 30%.",
         "url": "http://www.usa.philips.com/healthcare"
     }, {
         "employer": "Bechtel Plant Machinery Incorporated",
         "title": "Quality Assurance Engineer",
         "location": "Monroeville, PA",
         "dates": "2008 - 2010",
-        "description": "Evaluated capability of Naval Nuclear Propulsion Program suppliers to manufacture equipment per contract requirements.  Reviewed supplier hardware and software deliverables prior to accepting equipment.",
+        "description": "Evaluated capability of 2 Naval Nuclear Propulsion Program suppliers to manufacture equipment per contract requirements.  Performed equipment acceptance reviews and contributed to successful fielding of 2 new versions of control system components.",
         "url": "http://www.bpmionline.com"
     }, {
         "employer": "US Army PM Transportation Information Systems",
         "title": "Group Lead, Software Engineering and Interoperability",
         "location": "Springfield, VA",
         "dates": "2005 - 2008",
-        "description": "Lead software development group that developed Enterprise Resource Planning solutions for military deployment, distribution, and air load planning.  Managed three development leads responsible for coordinating the work of about 25 software developers.  Reviewed Java and JavaScript software deliverables and provided recommendations on software acceptance.  Minimized system interface complexity by reducing touchpoints with other Department of Defense systems and standardizing XML data formats.",
+        "description": "Lead software development group that developed Enterprise Resource Planning solutions for military deployment, distribution, and air load planning.  Managed three development leads responsible for coordinating the work of about 25 software developers.  Optimized XML data format and reduced touchpoints with other Department of Defense systems, reducing load times by 15%.  Reviewed Java and JavaScript software deliverables, provided recommendations on software acceptance.",
         "url": "http://www.pdamis.army.mil/"
     }, {
         "employer": "Naval Surface Warfare Center Dahlgren Division",
         "title": "Software Engineer",
         "location": "Dahlgren, VA",
         "dates": "2003 - 2005",
-        "description": "Developed tactical data and radar simulation software using C, C++ and Microsoft Visual C++.  Created components of a software model used to identify potential tactical system interoperability issues.  Maintained a web application used to plan, execute, and assess combat system interoperability tests.",
+        "description": "Created C++ software model components that tested the tactical system interoperability of 5 proposed network architectures.  Performed software testing and readiness reviews in support of 12 tactical system interoperability testing exercises.  Maintained an ASP web application used to plan, execute, and assess combat system interoperability tests.",
         "url": "http://www.navsea.navy.mil/Home/WarfareCenters/NSWCDahlgren.aspx"
     }, {
         "employer": "United States Steel Corporation",
         "title": "Engineering Intern",
         "location": "Dravosburg, PA",
         "dates": "1999 - 2002",
-        "description": "Developed supervisory, control, and data acquisition software using C, C++, and Microsoft Visual C++.",
+        "description": "Developed and maintained supervisory, control, and data acquisition software using C++ in support of 7 manufacturing lines.",
         "url": "https://www.ussteel.com/uss/portal/home"
     }],
     display: function() {
