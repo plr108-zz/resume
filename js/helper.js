@@ -13,7 +13,7 @@ var HTMLlocation = '<li class="contact flex-item"><span class="light-blue-text">
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message flex-box">%data%</span>';
 
-var HTMLskillsStart = '<h3 class="skills-header">Languages:</h3><ul id="skills" class="flex-box"></ul>';
+var HTMLskillsStart = '<h3 class="skills-header">%data%:</h3><ul class="flex-box" id="%id%"></ul>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';

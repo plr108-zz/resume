@@ -17,9 +17,9 @@ var bio = {
         "locationURL": "https://www.google.com/maps/place/Irwin,+PA+15642/@40.3189343,-79.7836634,12z/data=!3m1!4b1!4m2!3m1!1s0x8834dd3f7b945281:0x3ada31dc83155eba",
     },
 
-    "skills": [
-        "JavaScript", "HTML", "CSS", "Java", "C++", "C"
-    ],
+    "languages": ["JavaScript", "HTML", "CSS", "Java", "C++", "C"],
+    "frameworks_libraries": ["KnockoutJS", "Bootstrap", "jQuery", "jQueryUI", "Jasmine"],
+    "other_tools": ["Chrome DevTools", "Grunt", "Gulp", "Git", "GitHub"],
 
     "bioPic": "images/me.jpg",
 
@@ -49,13 +49,35 @@ var bio = {
         $("#header").append(formattedBioPic);
         $("#header").append(formattedWelcomeMsg);
         $("#header").append('<div id="skills-container"></div>');
-        if (bio.skills.length > 0) {
-            $("#skills-container").append(HTMLskillsStart);
 
+
+        if (bio.languages.length > 0) {
+            var skillsStart = HTMLskillsStart.replace("%data%", "Languages").replace("%id%", "skills-languages");
+            $("#skills-container").append(skillsStart);
             var formattedSkill = null;
-            for (var i = 0; i < bio.skills.length; i++) {
-                formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
-                $("#skills").append(formattedSkill);
+            for (var i = 0; i < bio.languages.length; i++) {
+                formattedSkill = HTMLskills.replace("%data%", bio.languages[i]);
+                $("#skills-languages").append(formattedSkill);
+            }
+        }
+
+        if (bio.frameworks_libraries.length > 0) {
+            var skillsStart = HTMLskillsStart.replace("%data%", "Frameworks/Libraries").replace("%id%", "skills-fw-lib");
+            $("#skills-container").append(skillsStart);
+            var formattedSkill = null;
+            for (var i = 0; i < bio.frameworks_libraries.length; i++) {
+                formattedSkill = HTMLskills.replace("%data%", bio.frameworks_libraries[i]);
+                $("#skills-fw-lib").append(formattedSkill);
+            }
+        }
+
+        if (bio.other_tools.length > 0) {
+            var skillsStart = HTMLskillsStart.replace("%data%", "Other Tools").replace("%id%", "skills-other");
+            $("#skills-container").append(skillsStart);
+            var formattedSkill = null;
+            for (var i = 0; i < bio.other_tools.length; i++) {
+                formattedSkill = HTMLskills.replace("%data%", bio.other_tools[i]);
+                $("#skills-other").append(formattedSkill);
             }
         }
 
@@ -266,9 +288,7 @@ var education = {
             // each online course entry.
             $(".education-entry:last").append(formattedOnlineDates + "<br>");
         }
-
     }
-
 };
 
 var work = {

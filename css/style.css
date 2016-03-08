@@ -135,7 +135,6 @@ ul {
     display: inline;
 }
 
-
 .light-blue {
     background-color: #85a3f3;
 }
@@ -152,7 +151,6 @@ ul {
     float: right;
 }
 
-
 .project-image {
     display: block;
 }
@@ -165,10 +163,6 @@ ul {
     display: block;
     margin: 0;
 }
-
-
-
-
 
 .skills-header {
     color: #85a3f3;
