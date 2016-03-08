@@ -88,7 +88,7 @@ ul {
 .biopic {
     float: left;
     padding: 10px;
-    width: 200px;
+    width: 175px;
     display: block;
 }
 
@@ -177,7 +177,7 @@ ul {
     font-size: 16px;
     color: #f3f3f3;
     line-height: 28px;
-    max-width: 650px;
+    max-width: 575px;
 }
 
 .white-text {
@@ -244,9 +244,11 @@ ul {
 
 /* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
 
-@media only screen and (min-width: 650px) and (max-width: 749px) {
+@media only screen and (min-width: 650px) {
     #topContacts,
-    #footerContacts {
+    #footerContacts,
+    #skills-languages {
+        font-size: 16px;
         display: block;
         -moz-column-count: 2;
         -moz-column-gap: 20px;
