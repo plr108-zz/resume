@@ -91,25 +91,25 @@ var projects = {
     "projects": [{
         "title": "Neighborhood Map",
         "dates": "January 2016 - February 2016",
-        "description": "<p>Developed web application that uses APIs for Google Maps, Wikipedia, and Flickr to show information about the ballparks of Major League Baseball.</p><p></p><p><b>Technologies used:</b>  JavaScript, KnockoutJS, MVVM, jQuery, jQuery UI, AJAX</p>",
+        "description": "<p>Developed web application that uses APIs for Google Maps, Wikipedia, and Flickr to show information about the ballparks of Major League Baseball.</p><p><b>Technologies used:</b>  JavaScript, KnockoutJS, MVVM, jQuery, jQuery UI, AJAX</p>",
         "images": ["images/FEND5-1.png"],
         "demoLink": "http://plr108.github.io/ballpark-map/index.html"
     }, {
         "title": "Website Performance Optimization Project",
         "dates": "December 2015",
-        "description": "<p>Optimized website to improve PageSpeed Insights score from <a class='inline-link underline-link' target='_blank' href='https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcameronwp.github.io%2Fudportfolio%2F&tab=mobile'>28/100</a> to <a class='inline-link underline-link' target='_blank' href='https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fplr108.github.io%2Fweb-perf%2Findex.html'>94/100</a>.  Optimized animation-intensive website to run at 60 fps.  Please see the README in the <a class='inline-link underline-link' target='_blank' href='https://github.com/plr108/web-perf'>GitHub Repository</a> for more information on the optimizations.</p><p></p><p><b>Technologies used:</b> JavaScript, Chrome DevTools, HTML, CSS</p>",
+        "description": "<p>Optimized website to improve PageSpeed Insights score from <a class='inline-link underline-link' target='_blank' href='https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcameronwp.github.io%2Fudportfolio%2F&tab=mobile'>28/100</a> to <a class='inline-link underline-link' target='_blank' href='https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fplr108.github.io%2Fweb-perf%2Findex.html'>94/100</a>.  Optimized animation-intensive website to run at 60 fps.  Please see the README in the <a class='inline-link underline-link' target='_blank' href='https://github.com/plr108/web-perf'>GitHub Repository</a> for more information on the optimizations.</p><p><b>Technologies used:</b> JavaScript, Chrome DevTools, HTML, CSS</p>",
         "images": ["images/FEND4.png"],
         "demoLink": "http://plr108.github.io/web-perf/index.html"
     }, {
         "title": "Freelance Project: Masterworks Concert Chorale Website",
         "dates": "October 2015 - December 2015",
-        "description": "<p>Created a responsive website for a non-profit concert group in Murrysville, Pennsylvania.  Website improvements helped to improve concert attendance by 10% and increase website traffic by over 20%.  Trained concert chorale board member to maintain the site and make minor edits.  I show the December 2015 version of the site in my portfolio.  Here is a link to the <a class='inline-link underline-link' href='http://www.mccsings.com' target='_blank'>live site</a>.</p><p></p><p><b>Technologies used:</b>  HTML, CSS, JavaScript, Bootstrap, jQuery, Knockout</p>",
+        "description": "<p>Created a responsive website for a non-profit concert group in Murrysville, Pennsylvania.  Website improvements helped to improve concert attendance by 10% and increase website traffic by over 20%.  Trained concert chorale board member to maintain the site and make minor edits.  I show the December 2015 version of the site in my portfolio.  Here is a link to the <a class='inline-link underline-link' href='http://www.mccsings.com' target='_blank'>live site</a>.</p><p><b>Technologies used:</b>  HTML, CSS, JavaScript, Bootstrap, jQuery, Knockout</p>",
         "images": ["images/MCC.png"],
         "demoLink": "http://plr108.github.io/mccsings/index.html"
     }, {
         "title": "Classic Arcade Game Clone",
         "dates": "October 2015",
-        "description": "<p>Created web game based on the classic arcade game Frogger.  Please see the README in the <a class='inline-link underline-link' target='_blank' href='https://github.com/plr108/feed-the-ladybugs'>GitHub Repository</a> for game instructions.</p><p></p><p><b>Technologies used:</b>  Object-Oriented JavaScript, HTML Canvas</p>",
+        "description": "<p>Created web game based on the classic arcade game Frogger.  Please see the README in the <a class='inline-link underline-link' target='_blank' href='https://github.com/plr108/feed-the-ladybugs'>GitHub Repository</a> for game instructions.</p><p><b>Technologies used:</b>  Object-Oriented JavaScript, HTML Canvas</p>",
         "images": ["images/FEND3.png"],
         "demoLink": "http://plr108.github.io/feed-the-ladybugs/index.html"
     }],
