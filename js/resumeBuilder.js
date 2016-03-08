@@ -52,7 +52,7 @@ var bio = {
 
 
         if (bio.languages.length > 0) {
-            var skillsStart = HTMLskillsStart.replace("%data%", "Languages").replace("%id%", "skills-languages");
+            var skillsStart = HTMLskillsStart.replace("%data%", "Programming Languages").replace("%id%", "skills-languages");
             $("#skills-container").append(skillsStart);
             var formattedSkill = null;
             for (var i = 0; i < bio.languages.length; i++) {
