@@ -141,6 +141,7 @@ ul {
 
 .contact-type {
     color: #85a3f3;
+    padding: 5px 5px 5px 0;
 }
 
 .location-text {
@@ -167,7 +168,7 @@ ul {
 .skills-header {
     color: #85a3f3;
     clear: both;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 .underline-link:hover {
@@ -179,6 +180,7 @@ ul {
     color: #f3f3f3;
     line-height: 28px;
     max-width: 575px;
+    padding: 10px 0 10px 0;
 }
 
 .white-text {
@@ -215,6 +217,14 @@ ul {
     height: 400px;
     width: 100%;
     padding-bottom: 5%;
+}
+
+#name {
+    padding: 0 10px 0 0;
+}
+
+#role {
+    padding: 5px 5px 5px 0px;
 }
 
 #skills-languages,
