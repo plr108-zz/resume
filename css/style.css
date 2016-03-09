@@ -61,6 +61,11 @@ h4 {
     line-height: 17px;
 }
 
+hr {
+    max-width: 1000px;
+    margin-left: 0;
+}
+
 img {
     max-width: 100%;
 }
@@ -87,8 +92,8 @@ ul {
 
 .biopic {
     float: left;
-    padding: 10px 10px 10px 0;
-    width: 175px;
+    padding: 10px 15px 10px 0;
+    width: 130px;
     display: block;
 }
 
@@ -166,6 +171,7 @@ ul {
 }
 
 .skills-header {
+    display: inline;
     color: #85a3f3;
     clear: both;
     padding-left: 0px;
@@ -179,8 +185,9 @@ ul {
     font-size: 16px;
     color: #f3f3f3;
     line-height: 28px;
-    max-width: 575px;
-    padding: 10px 0 10px 0;
+    max-width: 950px;
+    padding: 10px 0 0 0;
+    display: block;
 }
 
 .white-text {
@@ -227,10 +234,23 @@ ul {
     padding: 5px 5px 5px 0px;
 }
 
+#skills-container {
+    max-width: 1000px;
+}
+
 #skills-languages,
 #skills-fw-lib,
 #skills-other {
-    max-width: 800px;
+    max-width: 660px;
+    padding: 10px 0 10px 0;
+}
+
+#top-contacts {
+    max-width: 1000px;
+}
+
+#top-rule {
+    max-width: 855px;
 }
 
 /* Media queries to handle various device widths */
@@ -245,8 +265,8 @@ ul {
 /* Show contact info in one column. */
 
 @media only screen and (max-width: 649px) {
-    #topContacts,
-    #footerContacts {
+    #top-contacts,
+    #footer-contacts {
         display: block;
         text-align: left;
     }
@@ -261,8 +281,8 @@ ul {
 /* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
 
 @media only screen and (min-width: 650px) {
-    #topContacts,
-    #footerContacts {
+    #top-contacts,
+    #footer-contacts {
         font-size: 16px;
         display: block;
         -moz-column-count: 2;
@@ -287,7 +307,6 @@ ul {
 }
 
 @media only screen and (min-width: 750px) {
-    .skills-header,
     .biopic {
         display: block;
     }
@@ -298,4 +317,3 @@ ul {
         width: 150px;
     }
 }
-

@@ -38,16 +38,17 @@ var bio = {
 
         $("#header").prepend(formattedRole);
         $("#header").prepend(formattedName);
+        $("#header").prepend(formattedBioPic);
 
         // show contact info in header and footer
-        $("#topContacts, #footerContacts").append(formattedMobile);
-        $("#topContacts, #footerContacts").append(formattedEmail);
-        $("#topContacts, #footerContacts").append(formattedLinkedIn);
-        $("#topContacts, #footerContacts").append(formattedGitHub);
-        $("#topContacts, #footerContacts").append(formattedPortfolio);
-        $("#topContacts, #footerContacts").append(formattedLocation);
-        $("#header").append(formattedBioPic);
-        $("#header").append(formattedWelcomeMsg);
+        $("#top-contacts, #footer-contacts").append(formattedMobile);
+        $("#top-contacts, #footer-contacts").append(formattedEmail);
+        $("#top-contacts, #footer-contacts").append(formattedLinkedIn);
+        $("#top-contacts, #footer-contacts").append(formattedGitHub);
+        $("#top-contacts, #footer-contacts").append(formattedPortfolio);
+        $("#top-contacts, #footer-contacts").append(formattedLocation);
+        $("#header").append('<div id="biopic-welcome-container"></div>');
+        $("#biopic-welcome-container").append(formattedWelcomeMsg);
         $("#header").append('<div id="skills-container"></div>');
 
 
