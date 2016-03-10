@@ -285,22 +285,6 @@ ul {
 }
 
 
-/* Show contact info in one column. */
-
-@media only screen and (max-width: 649px) {
-    #top-contacts,
-    #footer-contacts {
-        display: block;
-        text-align: left;
-    }
-    .welcome-message {
-        display: block;
-        font-size: 14px;
-        line-height: 24px;
-    }
-}
-
-
 /* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
 
 @media only screen and (min-width: 750px) {
@@ -363,21 +347,56 @@ ul {
         flex-wrap: wrap;
     }
     #biopic-small-container {
+        float: left;
+        display: inline;
         width: 90px;
-        display: block;
     }
     #name-role-container {
-        overflow: auto;
-        vertical-align: middle;
-        margin-top: 40px;
+        overflow: hidden;
+        padding-top: 40px;
     }
     #top-contacts {
         width: 100%;
         display: block;
     }
+    #top-content-right {
+        display: inline;
+    }
 }
 
 @media only screen and (max-width: 500px) {
+    #name {
+        font-size: 24px;
+    }
+    #name-role-container {
+        padding-top: 12px;
+    }
 
+    /* show name and role on separate rows */
+    #role {
+        display: block;
+        margin-bottom: 8px;
+        padding: 0 0 0 2px;
+    }
+
+    /* Show contact info in one column. */
+    #top-contacts {
+        font-size: 14px;
+        display: block;
+        -moz-column-count: 1;
+        -moz-column-gap: 40px;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 40px;
+        column-count: 1;
+        column-gap: 0px;
+        height: auto;
+        text-align: left;
+
+        max-width: 100%;
+        padding-top: 5px;
+        width: auto;
+    }
+    .contact {
+        display: block;
+    }
 }
-
