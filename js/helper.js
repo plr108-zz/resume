@@ -1,6 +1,6 @@
 /* JavaScript functions are used to replace the placeholder text between % signs, e.g., %data% */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span id="role">%data%</span><hr id="top-rule">';
+var HTMLheaderRole = '<span id="role">%data%</span>';
 
 var HTMLcontactGeneric = '<li class="contact flex-item"><span class="contact-type">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="contact flex-item"><span class="contact-type">Mobile</span><span class="white-text"><a href="%link%" target="_blank">%data%</span></li>';
@@ -10,7 +10,7 @@ var HTMLportfolio = '<li class="contact flex-item"><span class="contact-type">Po
 var HTMLgithub = '<li class="contact flex-item"><span class="contact-type">GitHub</span><span class="white-text"><a href="%link%" target="_blank">%data%</a></span></li>';
 var HTMLlocation = '<li class="contact flex-item"><span class="contact-type">Location</span><span class="white-text"><a href="%link%" target="_blank">%data%</span></li>';
 
-var HTMLbioPic = '<img src="%data%" class="biopic">';
+var HTMLbioPic = '<img class="biopic" id="%id%" src="%data%">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span><hr>';
 
 var HTMLskillsStart = '<h3 class="skills-header">%data%:</h3><ul class="flex-box" id="%id%"></ul>';

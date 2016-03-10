@@ -33,12 +33,24 @@ var bio = {
         var formattedPortfolio = HTMLportfolio.replace("%data%", bio.contacts.portfolio).replace("%link%", bio.contacts.portfolioURL);
         var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github).replace("%link%", bio.contacts.githubURL);
         var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location).replace("%link%", bio.contacts.locationURL);
-        var formattedBioPic = HTMLbioPic.replace("%data%", "images/me.jpg");
+        var formattedBioPicBig = HTMLbioPic.replace("%data%", "images/me.jpg").replace("%id%", "biopic-big");
+        var formattedBioPicSmall = HTMLbioPic.replace("%data%", "images/me.jpg").replace("%id%", "biopic-small");
         var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
-        $("#header").prepend(formattedRole);
-        $("#header").prepend(formattedName);
-        $("#header").prepend(formattedBioPic);
+        $("#header").prepend('<div id="top-content-container"></div>');
+        $("#top-content-container").append('<div id="top-content-left"></div>');
+        $("#top-content-left").append(formattedBioPicBig);
+        $("#top-content-container").append('<div id="top-content-right"></div>');
+
+        // biopic is present in both top-content-left and top-content-right.
+        // Only one pic is visible.  The visible pic is determined by viewport size.
+        $("#top-content-right").append('<div id="biopic-small-container"></div>');
+        $("#top-content-right").append('<div id="name-role-container"></div>');
+        $("#biopic-small-container").append(formattedBioPicSmall);
+        $("#name-role-container").append(formattedName);
+        $("#name-role-container").append(formattedRole);
+        $("#name-role-container").append('<hr id="top-rule">');
+        $("#top-content-right").append('<ul id="top-contacts"</ul>');
 
         // show contact info in header and footer
         $("#top-contacts, #footer-contacts").append(formattedMobile);
