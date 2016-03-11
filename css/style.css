@@ -241,8 +241,12 @@ ul {
     background-color: #0f1f4c;
 }
 
+#footer-contacts {
+    max-width: 1005px;
+}
+
 #lets-connect {
-    text-align: center;
+    text-align: left;
     color: #3366ff;
     background-color: #0f1f4c;
 }
