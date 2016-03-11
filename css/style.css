@@ -92,6 +92,7 @@ ul {
 .work-entry,
 .project-entry {
     padding: 5px 5%;
+    max-width: 845px;
 }
 
 .center-content {
@@ -266,6 +267,10 @@ ul {
     overflow: hidden;
 }
 
+#resume-links {
+    max-width: 845px;
+}
+
 #role {
     padding: 5px 5px 5px 0px;
 }
@@ -289,6 +294,7 @@ ul {
 }
 
 #top-content-right {
+    max-width: 700px;
     overflow: hidden;
 }
 
@@ -296,7 +302,9 @@ ul {
     display: block;
     max-width: 855px;
 }
-
+#welcome-bullets-list {
+    max-width: 845px;
+}
 
 /* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
 
