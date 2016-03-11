@@ -171,6 +171,10 @@ ul {
     padding-left: 0px;
 }
 
+.tech-used {
+    margin: 5px 0 5px 0;
+}
+
 .underline-link:hover {
     text-decoration: underline;
 }
@@ -350,6 +354,10 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
+    .welcome-bullet {
+        margin-left: 15px;
+        margin-top: 5px;
+    }
     #top-content-right {
         width: 100%;
         display: flex;
@@ -371,6 +379,9 @@ ul {
     #top-content-right {
         display: inline;
     }
+    #welcome-container {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -379,10 +390,6 @@ ul {
     }
     .contact {
         display: block;
-    }
-    .welcome-bullet {
-        margin-left: 15px;
-        margin-top: 5px;
     }
     #name {
         font-size: 24px;
@@ -413,14 +420,8 @@ ul {
         padding-top: 5px;
         width: auto;
     }
-    #welcome-container {
-        display: none;
-    }
     .skills-header {
         font-size: 14px;
-    }
-    .tech-used {
-        margin: 5px 0 5px 0;
     }
     /* display skills in 2 columns */
     #skills-fw-lib {
@@ -433,7 +434,6 @@ ul {
         -webkit-column-gap: 10px;
         column-count: 2;
         column-gap: 10px;
-        height: auto;
         text-align: left;
         max-width: 100%;
         padding-top: 5px;
@@ -449,7 +449,57 @@ ul {
         -webkit-column-gap: 10px;
         column-count: 2;
         column-gap: 10px;
-        height: auto;
+        text-align: left;
+        max-width: 100%;
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    h2 {
+        font-size: 18px;
+        padding: 10px 10px 0 10px;
+    }
+    h3 {
+        font-size: 16px;
+        padding: 5% 5% 0 5%;
+    }
+    p {
+        font-size: 12px;
+    }
+    .contact {
+        font-size: 12px;
+    }
+    .education-entry,
+    .work-entry {
+        font-size: 14px;
+    }
+    .skills-header {
+        font-size: 12px;
+    }
+    .welcome-bullet {
+        font-size: 12px;
+    }
+    .white-text {
+        font-size: 12px;
+    }
+    #skills-container ul li span {
+        font-size: 11px;
+    }
+    #name {
+        font-size: 16px;
+    }
+    /* display skills in 2 columns */
+    #skills-languages {
+        display: block;
+        width: auto;
+        -moz-column-count: 2;
+        -moz-column-gap: 10px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 10px;
+        column-count: 2;
+        column-gap: 10px;
+        height: 80px;
         text-align: left;
         max-width: 100%;
         padding-top: 5px;
