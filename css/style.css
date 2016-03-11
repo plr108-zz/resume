@@ -164,6 +164,10 @@ ul {
     margin: 0;
 }
 
+.resume-link-text {
+    display: block;
+}
+
 .skills-header {
     display: inline;
     color: #85a3f3;

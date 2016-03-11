@@ -1,4 +1,5 @@
 var bio = {
+    "bioPic": "images/me.jpg",
     "name": "Patrick Roche",
     "role": "Web Developer",
     "welcomeMessage": "Web developer with 14+ years of professional problem solving experience including application development and user interface design.  Passionate about web and mobile, and eager to leverage skills built in the defense and medical device industries into a front-end development position.",
@@ -22,8 +23,8 @@ var bio = {
     "languages": ["JavaScript", "HTML", "CSS", "Java", "C++", "C"],
     "frameworks_libraries": ["Knockout JS", "Bootstrap", "jQuery", "jQueryUI", "Jasmine"],
     "other_tools": ["Chrome DevTools", "Grunt", "Gulp", "Git", "GitHub"],
-
-    "bioPic": "images/me.jpg",
+    "pdfResumeURL": "https://drive.google.com/file/d/0Bw9Pzles4ekkWm9Lc0l5MEc2ME0/view?usp=sharing",
+    "wordResumeURL": "https://drive.google.com/file/d/0Bw9Pzles4ekkT3lEUDlVNzQ5M3M/view?usp=sharing",
 
     display: function() {
 
@@ -40,6 +41,8 @@ var bio = {
         var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
         var formattedWelcomeBullet1 = HTMLwelcomeBullet.replace("%data%", bio.welcomeBullet1);
         var formattedWelcomeBullet2 = HTMLwelcomeBullet.replace("%data%", bio.welcomeBullet2);
+        var formattedWordResumeLink = HTMLresumeLink.replace("%data%", "Resume Microsoft Word Format").replace("%link%", bio.wordResumeURL);
+        var formattedPDFResumeLink = HTMLresumeLink.replace("%data%", "Resume PDF Format").replace("%link%", bio.pdfResumeURL);
 
         $("#header").prepend('<div id="top-content-container"></div>');
         $("#top-content-container").append('<div id="top-content-left"></div>');
@@ -101,6 +104,10 @@ var bio = {
                 $("#skills-other").append(formattedSkill);
             }
         }
+
+        $("#header").append('<div id="resume-links"><hr></div>');
+        $("#resume-links").append(formattedPDFResumeLink);
+        $("#resume-links").append(formattedWordResumeLink);
 
         // Show interactive map
         $("#locations").append('<div id="mapDiv"></div>');

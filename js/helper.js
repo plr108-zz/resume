@@ -17,6 +17,8 @@ var HTMLwelcomeBullet = '<li class="welcome-bullet">%data%</li>';
 var HTMLskillsStart = '<h3 class="skills-header">%data%:</h3><ul class="flex-box" id="%id%"></ul>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
+var HTMLresumeLink = '<span class="white-text resume-link-text"><a href="%link%" target="_blank">%data%</a></span>';
+
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a class="underline-link" href="#">%data%';
 var HTMLworkTitle = ' - %data%</a>';
