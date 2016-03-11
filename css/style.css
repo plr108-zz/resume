@@ -70,6 +70,10 @@ img {
     max-width: 100%;
 }
 
+li {
+    font-size: 16px;
+}
+
 p {
     font-size: 14px;
     color: #333;
@@ -173,6 +177,7 @@ ul {
     color: #85a3f3;
     clear: both;
     padding-left: 0px;
+    font-size: 16px;
 }
 
 .skills-ul {
@@ -190,21 +195,12 @@ ul {
 
 .welcome-bullet {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     list-style-type: disc;
     list-style-position: inside;
     text-indent: -1em;
     margin-left: 15px;
     margin-top: 5px;
-}
-
-.welcome-message {
-    font-size: 16px;
-    color: #f3f3f3;
-    line-height: 28px;
-    max-width: 950px;
-    padding: 10px 0 0 0;
-    display: block;
 }
 
 .white-text {
@@ -305,10 +301,6 @@ ul {
 /* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
 
 @media only screen and (min-width: 750px) {
-    .welcome-message {
-        font-size: 14px;
-        line-height: 24px;
-    }
     #top-contacts,
     #footer-contacts {
         font-size: 16px;
@@ -337,7 +329,6 @@ ul {
     .skills-ul {
         max-width: 500px;
     }
-
     #biopic-small-container {
         display: inline;
     }
@@ -370,9 +361,6 @@ ul {
         column-gap: 40px;
         height: 85px;
         text-align: left;
-    }
-    #welcome-container {
-        display: none;
     }
 }
 

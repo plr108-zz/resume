@@ -66,8 +66,6 @@ var bio = {
         $("#top-contacts, #footer-contacts").append(formattedGitHub);
         $("#top-contacts, #footer-contacts").append(formattedPortfolio);
         $("#top-contacts, #footer-contacts").append(formattedLocation);
-        $("#header").append('<div id="welcome-container"><hr></div>');
-        $("#welcome-container").append(formattedWelcomeMsg);
         $("#header").append('<ul id="welcome-bullets-list"><hr></ul>');
         $("#welcome-bullets-list").append(formattedWelcomeBullet1);
         $("#welcome-bullets-list").append(formattedWelcomeBullet2);
