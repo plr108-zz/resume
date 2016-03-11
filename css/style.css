@@ -175,6 +175,11 @@ ul {
     padding-left: 0px;
 }
 
+.skills-ul {
+    max-width: 660px;
+    padding: 10px 0 10px 0;
+}
+
 .tech-used {
     margin: 5px 0 5px 0;
 }
@@ -189,6 +194,8 @@ ul {
     list-style-type: disc;
     list-style-position: inside;
     text-indent: -1em;
+    margin-left: 15px;
+    margin-top: 5px;
 }
 
 .welcome-message {
@@ -271,13 +278,6 @@ ul {
     max-width: 1000px;
 }
 
-#skills-languages,
-#skills-fw-lib,
-#skills-other {
-    max-width: 660px;
-    padding: 10px 0 10px 0;
-}
-
 #top-contacts {
     max-width: 1000px;
 }
@@ -305,6 +305,10 @@ ul {
 /* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
 
 @media only screen and (min-width: 750px) {
+    .welcome-message {
+        font-size: 14px;
+        line-height: 24px;
+    }
     #top-contacts,
     #footer-contacts {
         font-size: 16px;
@@ -321,6 +325,19 @@ ul {
 }
 
 @media only screen and (max-width: 749px) {
+    li {
+        font-size: 14px;
+    }
+    .resume-link-text {
+        font-size: 14px;
+    }
+    .skills-header {
+        font-size: 14px;
+    }
+    .skills-ul {
+        max-width: 500px;
+    }
+
     #biopic-small-container {
         display: inline;
     }
@@ -333,6 +350,9 @@ ul {
     }
     #top-content-left {
         display: none;
+    }
+    #top-content-container {
+        height: 130px;
     }
     #top-rule {
         vertical-align: bottom;
@@ -351,26 +371,12 @@ ul {
         height: 85px;
         text-align: left;
     }
-    .welcome-message {
-        font-size: 14px;
-        line-height: 24px;
+    #welcome-container {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    li {
-        font-size: 14px;
-    }
-    .resume-link-text {
-        font-size: 14px;
-    }
-    .skills-header {
-        font-size: 14px;
-    }
-    .welcome-bullet {
-        margin-left: 15px;
-        margin-top: 5px;
-    }
     #top-content-right {
         width: 100%;
         display: flex;
@@ -394,9 +400,6 @@ ul {
     }
     #top-content-right {
         display: inline;
-    }
-    #welcome-container {
-        display: none;
     }
 }
 
@@ -439,11 +442,9 @@ ul {
         padding-top: 5px;
         width: auto;
     }
-
     #top-content-container {
         height: auto;
     }
-
     /* display skills in 2 columns */
     #skills-fw-lib {
         display: block;
