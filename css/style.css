@@ -417,6 +417,9 @@ ul {
     .skills-header {
         font-size: 14px;
     }
+    .tech-used {
+        margin: 5px 0 5px 0;
+    }
     /* display skills in 2 columns */
     #skills-fw-lib {
         display: block;
