@@ -358,6 +358,15 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
+    li {
+        font-size: 14px;
+    }
+    .resume-link-text {
+        font-size: 14px;
+    }
+    .skills-header {
+        font-size: 14px;
+    }
     .welcome-bullet {
         margin-left: 15px;
         margin-top: 5px;
@@ -380,6 +389,9 @@ ul {
         width: 100%;
         display: block;
     }
+    #top-content-container {
+        height: 170px;
+    }
     #top-content-right {
         display: inline;
     }
@@ -389,9 +401,6 @@ ul {
 }
 
 @media only screen and (max-width: 500px) {
-    li {
-        font-size: 14px;
-    }
     .contact {
         display: block;
     }
@@ -430,9 +439,11 @@ ul {
         padding-top: 5px;
         width: auto;
     }
-    .skills-header {
-        font-size: 14px;
+
+    #top-content-container {
+        height: auto;
     }
+
     /* display skills in 2 columns */
     #skills-fw-lib {
         display: block;
