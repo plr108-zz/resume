@@ -379,7 +379,6 @@ ul {
     .contact {
         display: block;
     }
-
     .welcome-bullet {
         margin-left: 15px;
         margin-top: 5px;
@@ -434,8 +433,7 @@ ul {
         max-width: 100%;
         padding-top: 5px;
     }
-
-        /* display skills in 2 columns */
+    /* display skills in 2 columns */
     #skills-other {
         display: block;
         width: auto;
