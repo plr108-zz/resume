@@ -87,7 +87,7 @@ ul {
 .education-entry,
 .work-entry,
 .project-entry {
-    padding: 0 5%;
+    padding: 5px 5%;
 }
 
 .center-content {
@@ -156,6 +156,7 @@ ul {
 
 .project-image-container {
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 .project-image-container a {
@@ -396,7 +397,8 @@ ul {
         padding: 0 0 0 2px;
     }
     /* Show contact info in one column. */
-    #top-contacts {
+    #top-contacts,
+    #footer-contacts {
         font-size: 14px;
         display: block;
         -moz-column-count: 1;
