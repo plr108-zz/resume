@@ -17,7 +17,7 @@ This project can be viewed [here on my GitHub Pages site](http://plr108.github.i
 
 If you would rather install this app, copy all files in the repository to the desired location on your web server.
 
-##Starting the App
+###Starting the App
 
 After installing the app, start the app by opening index.html (e.g., http://your_domain_name/index.html) in your favorite browser.
 
