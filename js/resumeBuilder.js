@@ -57,7 +57,7 @@ var bio = {
         $("#name-role-container").append(formattedName);
         $("#name-role-container").append(formattedRole);
         $("#name-role-container").append('<hr id="top-rule">');
-        $("#top-content-right").append('<ul id="top-contacts"</ul>');
+        $("#top-content-right").append('<ul id="top-contacts"></ul>');
 
         // show contact info in header and footer
         $("#top-contacts, #footer-contacts").append(formattedMobile);
